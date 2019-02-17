@@ -1,0 +1,426 @@
+@import '../styles/mixin';
+
+#header{
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @include xl{
+        $padding: 115px;
+        top: 61px;
+        padding: 0 $padding;
+        
+    }
+    @include lg{
+        $padding: 70px;
+        top: 61px;
+        padding: 0 $padding;
+    }
+    @include md{
+        $padding: 30px;
+        top: 61px;
+        padding: 0 $padding;
+    }
+
+    #page-indicator{
+        display: flex;
+        button{
+            padding: 0 1.8rem;
+            height: 5.2rem;
+            border-radius: 2.6rem;
+            border: none;
+            font-size: 2.1rem;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #383838;
+            background: transparent;
+            margin-right: 2.2rem;
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+        
+    }
+}
+body{
+    &.fp-viewing-section-0{
+        .btn-0{
+            color: #ffffff !important;
+            background-color: #31a79b !important;
+        }
+    }
+    &.fp-viewing-section-1{
+        .btn-1{
+            color: #ffffff !important;
+            background-color: #31a79b !important;
+        }
+    }
+    &.fp-viewing-section-2{
+        .btn-2{
+            color: #ffffff !important;
+            background-color: #31a79b !important;
+        }
+        #down-arrow{
+            display: none;
+        }
+    }
+
+    
+}
+#fixed-bottom{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    left:0;
+    right:0;
+    bottom:5.8rem;
+    text-align: center;
+    img{
+        width: 4.6rem;
+        height: 2.5rem;
+    }
+}
+#fixed-hori-image{
+    position: fixed;
+    width: 100%;
+    left:0;
+    bottom:0;
+    top:0;
+    right:0;
+    display: flex;
+    justify-content: space-between;
+    #googlehome{
+        margin-top: 222px;
+        img{
+            width: 33rem;
+        }
+    }
+    #alexa{
+        margin-top: 178px;
+        img{
+            width: 33.8rem;
+        }
+    }
+}
+
+.section{
+    .main-text{
+        font-size: 5.5rem;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.42;
+        letter-spacing: -0.28rem;
+        text-align: center;
+        color: #383838;
+
+        width: 72.8rem;
+        margin: auto;
+    }
+    .compatible-text{
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.2rem;
+        color: #00000030;
+        text-align: center;
+
+        margin-top: 2.8rem;
+
+        width: 72.8rem;
+        margin: auto;
+    }
+    .why-oneskill{
+        font-size: 1.8rem;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.3rem;
+        color: #00000030;
+
+        margin-top: 3.3rem;
+
+        width: 72.8rem;
+        margin: auto;
+    }
+    .long-text{
+        width: 72.8rem;
+        margin: auto;
+
+        margin-top: 1.9rem;
+        font-size: 2.4rem;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.71;
+        letter-spacing: -0.1rem;
+        text-align: justify;
+        color: #63636398;
+    }
+    .logos-wrapper{
+        text-align: center;
+        margin-top: 1.6rem;
+        img:first-child{
+            margin-right: 21px;
+        }
+    }
+    .procedure-wrapper{
+        display: flex;
+        justify-content: center;
+        margin-top: 12.3rem;
+        .procedure{
+            margin-right: 3.2rem;
+            &:last-child{
+                margin-right: 0px;
+            }
+            .top{
+                height: 2.4rem;
+                display: flex;
+                align-items: center;
+                .number{
+                    font-size: 2rem;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: -0.07rem;
+                    color: #31a79b;
+                    margin-right: 2rem;
+                }
+                .title{
+                    margin-right: 2.4rem;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: -0.07rem;
+                    color: #383838;
+                }
+                img.check{
+                    width: 3rem;
+                    height: 3rem;
+                }
+            }
+            .bottom{
+                margin-top: 0.9rem;
+                font-size: 2rem;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.45;
+                letter-spacing: -0.07rem;
+                color: #383838;
+            }
+        }
+    }
+}
+
+.register-wrapper{
+    width: 57.5rem;
+    margin: auto;
+    // height: 66.7rem;
+    border-radius: 1rem;
+    box-shadow: -0.2rem 1.1rem 3.5rem -0.3rem rgba(90, 142, 137, 0.13);
+    background-color: #ffffff;
+    padding: 6.6rem 12.7rem;
+    .full-button{
+        width: 100%;
+        height: 5.2rem;
+        border-radius: 0.8rem;
+        background-color: rgba(49, 167, 155, 0.82);
+        font-size: 1.6rem;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+
+        margin-bottom: 3.3rem;
+    }
+    .login-input{
+        margin-bottom: 2rem;
+        input{
+            height: 5.2rem;
+            padding: 1.7rem 2.14rem;
+    
+            font-size: 1.4rem;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            &::placeholder{
+                color: #929699;
+            }
+            border-top-right-radius: 0.8rem !important;
+            border-bottom-right-radius: 0.8rem !important;
+        }
+        .input-group-text{
+            border-top-left-radius: 0.8rem !important;
+            border-bottom-left-radius: 0.8rem !important;
+            display: flex;
+            justify-content: center;
+            width: 5.56rem;
+            background: white;
+        }
+        img.password-visible{
+            position: absolute;
+            top:1.8rem;
+            right:1.54rem;
+            opacity: 10;
+        }
+    }
+    .login-action-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .remember-me{
+            label{
+                font-size: 1.4rem;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #929699;
+                margin-left: 1.07rem;
+                display: inline-block;
+            }
+        }
+        button{
+            width: 10.69rem;
+            height: 5.2rem;
+            border-radius: 0.8rem;
+            background-color: #4786ff;
+            &.signup{
+                background-color: #54b6ac;
+            }
+            font-size: 1.6rem;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+        }
+    }
+    .forgot-wrapper{
+        text-align: center;
+        margin-top: 2.4rem;
+        margin-bottom: 2rem;
+        a{
+            font-size: 1.4rem;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #929699;
+        }
+    }
+    .or-wrapper{
+        position: relative;
+        margin-bottom: 3rem;
+        .line{
+            position: absolute;
+            left:0;
+            right:0;
+            border-top: 1px solid #e7e7e7;
+            z-index:0;
+            top: 0.9rem;
+        }
+        .text{
+            position: relative;
+            z-index:1;
+            margin: auto;
+            background: white;
+            width: 5.88rem;
+            height: 1.8rem;
+            font-size: 1.4rem;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #929699;          
+        }
+    }
+    .sns-login-block{
+        position: relative;
+        height: 5.2rem;
+        border-radius: 0.8rem;
+        overflow: hidden;
+        margin-bottom: 2.1rem;
+        &.fb{
+            background-color: #3b5998;
+            .icon{
+                background-color: #263c68;
+                img{
+                    width: 2.14rem;
+                    height: 2rem;
+                }
+            }
+        }
+        &.google{
+            background-color: #f44336;
+            .icon{
+                background-color: #c53126;
+                img{
+                    width: 1.6rem;
+                    height: 1.5rem;
+                }
+            }
+        }
+        .icon{
+            position: absolute;
+            left:0;
+            top: 0;
+            width: 5.56rem;
+            height: 5.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .text{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 5.2rem;
+            margin-left: 5.56rem;
+            font-size: 1.6rem;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+        }
+        
+    }
+}
+img.icon-account{
+    width: 2.21rem;
+    height: 2rem;
+}
+img.icon-key{
+    width: 2.63rem;
+    height: 2.6rem;
+}
+img.icon-eye{
+    width: 2.42rem;
+    height: 1.6rem;
+}

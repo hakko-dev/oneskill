@@ -1,0 +1,12 @@
+@import '../styles/mixin';
+@import '../styles/header.scss';
+@import '../styles/newskill.scss';
+
+.layout-area{
+    display: flex;
+    .left{
+        width: 34.1rem;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+}

@@ -1,0 +1,84 @@
+extends layout.pug
+
+block links
+    link(rel="stylesheet" href="./myskills-platform-add.scss")
+
+block content
+    #newskill-indicator
+        button.btn.title
+            | ADD PLATFORM
+        .indicator-area
+            .indicator.current
+                button.btn
+                .text Choose Platform
+            .line
+                img(src="/src/assets/img/line.svg")
+            .indicator.future
+                button.btn
+                .text Skill Info
+            .line
+                img(src="/src/assets/img/line.svg")
+            .indicator.future
+                button.btn
+                .text Upload Image
+            .line
+                img(src="/src/assets/img/line.svg")
+            .indicator.future
+                button.btn
+                .text Select Plan
+            .line
+                img(src="/src/assets/img/line.svg")
+            .indicator.future
+                button.btn
+                .text Checkout
+    #stage-container
+        #stage-title
+            .left
+                .number 1
+                .text
+                    .top Choose your platform.
+                    .bottom Which platform’s application do you like to build?
+            .right
+                button.btn Save changes
+        .card-wrapper
+            .card
+                button.btn.gray.my-skill MY SKILL
+                .logos
+                    img(src='/src/assets/img/alexa-logo.svg')
+                .title
+                    span.top skill
+                    br
+                    | amazon alexa
+                ul
+                    li One-click skill creation and register, $89.99
+                    li Monthly fee starts from $0.99 per month
+            .card.selected
+                button.btn.blue ADD PLATFORM!
+                .logos
+                    img(src='/src/assets/img/google-assistant-logo.svg')
+                .title
+                    span.top Action
+                    br
+                    | Google Assistant
+                ul
+                    li One-click skill creation and register, $89.99
+                    li Monthly fee starts from $0.99 per month
+            .card
+                button.btn.gray.coming COMING SOON
+                .logos
+                    img(src='/src/assets/img/mycroft-mattermost.png')
+                .title
+                    span.top ACTION
+                    br
+                    | Mycroft
+                ul
+                    li 
+                        | One-click skill creation and register,  $89.99
+                    li Monthly fee starts from $0.99 per month
+        
+        .next-button
+            a(href="/src/pages/myskills-newskill-name-info.pug")
+                button.btn NEXT
+
+block append scripts
+    script.

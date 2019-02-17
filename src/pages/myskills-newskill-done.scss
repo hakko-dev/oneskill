@@ -1,0 +1,49 @@
+@import '../styles/mixin';
+@import '../styles/header.scss';
+@import '../styles/newskill-indicator.scss';
+@import '../styles/newskill.scss';
+
+.card-area{
+    width: 86.8rem;
+    height: 51.4rem;
+    border-radius: 1rem;
+    box-shadow: -2px 11px 35px -3px rgba(90, 142, 137, 0.13);
+    background-color: #ffffff;
+    padding: 9.1rem 7.2rem;
+    margin: 0 auto 0;
+    img{
+        width: 10rem;
+        height: 8.5rem;
+        display: block;
+        margin: 0 auto 4.4rem;
+    }
+    .title{
+        text-align: center;
+        font-size: 3.1rem;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #383838;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+    }
+    .desc{
+        font-size: 2.1rem;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2.1;
+        letter-spacing: -0.05rem;
+        color: #9da8bb;
+        span.green{
+            font-weight: 600;
+        }
+        span.bold{
+            font-weight: 600;
+            color: #383838;
+        }
+    }
+    
+}

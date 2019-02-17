@@ -1,0 +1,52 @@
+extends layout.pug
+
+block links
+    link(rel="stylesheet" href="./myskills-newskill-done.scss")
+
+block content
+    #newskill-indicator
+        button.btn.title
+            | Add new skill or action
+        .indicator-area
+            .indicator.done
+                button.btn
+                .text Choose Platform
+            .line
+                img(src="/src/assets/img/line-active.svg")
+            .indicator.done
+                button.btn
+                .text Skill Info
+            .line
+                img(src="/src/assets/img/line-active.svg")
+            .indicator.done
+                button.btn
+                .text Upload Image
+            .line
+                img(src="/src/assets/img/line-active.svg")
+            .indicator.done
+                button.btn
+                .text Select Plan
+            .line
+                img(src="/src/assets/img/line-active.svg")
+            .indicator.done
+                button.btn
+                .text Checkout
+    #stage-container
+        #stage-title
+            .left
+                .number 5
+                .text
+                    .top Skill upload requested
+                    .bottom Which platform’s application do you like to build?
+        .card-area
+            img(src='/src/assets/img/message.svg')
+            .title Done!
+            .desc
+                 | Your skill 
+                 span.green Skill Name Example 
+                 | is built and requested to registered to Amazon Alexa Skill Market. You can check the progress in your ‘my skill’ menu. This may take 
+                 span.bold 3-5 business days.
+block append scripts
+    script.
+        
+        

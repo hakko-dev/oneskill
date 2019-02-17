@@ -1,0 +1,48 @@
+extends layout.pug
+
+block links
+    link(rel="stylesheet" href="./myskills-newskill-checkout.scss")
+
+block content
+    #newskill-indicator
+        button.btn.title
+            | Add new skill or action
+        .indicator-area
+            .indicator.done
+                button.btn
+                .text Choose Platform
+            .line
+                img(src="/src/assets/img/line-active.svg")
+            .indicator.done
+                button.btn
+                .text Skill Info
+            .line
+                img(src="/src/assets/img/line-active.svg")
+            .indicator.done
+                button.btn
+                .text Upload Image
+            .line
+                img(src="/src/assets/img/line-active.svg")
+            .indicator.done
+                button.btn
+                .text Select Plan
+            .line
+                img(src="/src/assets/img/line-active.svg")
+            .indicator.current
+                button.btn
+                .text Checkout
+    #stage-container
+        #stage-title
+            .left
+                .number 5
+                .text
+                    .top Check total and choose payment method
+                    .bottom Which platform’s application do you like to build?
+            .right
+                button.btn Save changes
+        
+       
+block append scripts
+    script.
+        
+        

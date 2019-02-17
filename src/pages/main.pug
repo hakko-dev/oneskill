@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+html
+    head
+        title One Skill
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.css" integrity="sha256-MEURuTYmXMgJUKFGPHlPu7NKXWTA2PMhMIaM+OZhE84=" crossorigin="anonymous")
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet")
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/all.css', integrity='sha256-KS/KA6l6/TgimcBRobFX07zO4LAjYASrXfF79TFBk1Q=', crossorigin='anonymous')
+        link(rel="stylesheet" href="../styles/global.scss")
+        
+
+        link(rel="stylesheet" href="./main.scss")
+    body
+        #header
+            #logo
+                img(src="/src/assets/img/logo.svg")
+            #page-indicator
+                button.btn-0(type="button" onclick="location.href='#section-0'") 01
+                button.btn-1(type="button" onclick="location.href='#section-1'") 02
+                button.btn-2(type="button" onclick="location.href='#section-2'") Sign In
+        #fixed-hori-image
+            #googlehome
+                img(src="/src/assets/img/googlehome.png")
+            #alexa
+                img(src="/src/assets/img/alexa.png")
+        #fixed-bottom
+            img#down-arrow(src="/src/assets/img/down-arrow.svg")
+        #fullpage
+            .section 
+                .main-text
+                    span.green 1 MINUTE 
+                    | IS ALL YOU 
+                    br
+                    | NEED TO COMMUNICATE 
+                    br
+                    | WITH THE WORLD.
+                .compatible-text
+                    | Compatible with
+                .logos-wrapper
+                    img(src='/src/assets/img/alexalogo.png')
+                    img(src='/src/assets/img/google-assistant-logo.png')
+                .procedure-wrapper
+                    .procedure
+                        .top
+                            .number 01
+                            .title Ideation
+                            img(src='/src/assets/img/dot-dot-dot.svg')
+                        .bottom
+                            | Have some idea to
+                            br
+                            | share with people
+                            br
+                            | from smart speaker?
+                    .procedure
+                        .top
+                            .number 02
+                            .title Skill Info
+                            img(src='/src/assets/img/dot-dot-dot.svg')
+                        .bottom
+                            | Type in your skill or 
+                            br
+                            | action’s name and 
+                            br
+                            | information.
+                    .procedure
+                        .top
+                            .number 03
+                            .title Image
+                            img(src='/src/assets/img/dot-dot-dot.svg')
+                        .bottom
+                            | Upload an image
+                            br
+                            | for the icon of  your 
+                            br
+                            | new skill. 
+                    .procedure
+                        .top
+                            .number
+                                img.check(src='/src/assets/img/done.svg')
+                            .title.green Ideation
+                        .bottom.green
+                            | All good!
+                            br
+                            | Your skill is ready 
+                            br
+                            | for the approval.
+            .section
+                .main-text.text-left
+                    | MAKE YOUR OWN
+                    br
+                    | SMART SPEAKER SKILL
+                    br
+                    | IN JUST 
+                    span.green ONE MINUTE.
+                .why-oneskill.text-left
+                    | Why Oneskill?
+                .long-text
+                    | Most skill or action tools are difficult, 
+                    | because they are for software developers. 
+                    | With Oneskill, you can just make your own smart speaker skill
+                    |  and have posting board to broadcast in 1 minute!
+            .section
+                .register-wrapper
+                    #login-wrapper
+                        button.btn.full-button#sign-up-button SIGN UP FOR A FREE ACCOUNT
+                        .input-group.login-input
+                            .input-group-prepend
+                                span.input-group-text
+                                    img.icon-account(src='/src/assets/img/account.svg')
+                            input.form-control(type='text', placeholder='Username or email', aria-label='Username or email')
+                        .input-group.login-input
+                            .input-group-prepend
+                                span.input-group-text
+                                    img.icon-key(src='/src/assets/img/key.svg')
+                            input.form-control#password(type='password', placeholder='Password', aria-label='Password')
+                            img.icon-eye.password-visible(src='/src/assets/img/eye.svg')
+                        .login-action-wrapper
+                            .remember-me
+                                input#remember(type="checkbox")
+                                label(for='remember') Remember me
+                            button.btn LOGIN
+                        .forgot-wrapper
+                            a Forgot password?
+                        .or-wrapper
+                            div.line
+                            div.text or
+                        .sns-login-block.fb
+                            .icon 
+                                img(src='/src/assets/img/fb.svg')
+                            .text LOGIN WITH FACEBOOK
+                        .sns-login-block.google
+                            .icon 
+                                img(src='/src/assets/img/google-plus.svg')
+                            .text LOGIN WITH GOOGLE
+                    #signup-wrapper(style="display: none;")
+                        .input-group.login-input
+                            .input-group-prepend
+                                span.input-group-text
+                                    img.icon-account(src='/src/assets/img/account.svg')
+                            input.form-control(type='text', placeholder='Email', aria-label='Email')
+                        .input-group.login-input
+                            .input-group-prepend
+                                span.input-group-text
+                                    img.icon-account(src='/src/assets/img/account.svg')
+                            input.form-control(type='text', placeholder='Confirm Email', aria-label='Confirm Email')
+                        .input-group.login-input
+                            .input-group-prepend
+                                span.input-group-text
+                                    img.icon-key(src='/src/assets/img/key.svg')
+                            input.form-control#password(type='password', placeholder='Password', aria-label='Password')
+                            img.icon-eye.password-visible(src='/src/assets/img/eye.svg')
+                        .input-group.login-input
+                            .input-group-prepend
+                                span.input-group-text
+                                    img.icon-key(src='/src/assets/img/key.svg')
+                            input.form-control#password(type='password', placeholder='Confirm Password', aria-label='Confirm Password')
+                            img.icon-eye.password-visible(src='/src/assets/img/eye.svg')
+                        .login-action-wrapper
+                            .remember-me
+                            button.btn.signup SIGN UP
+                        .forgot-wrapper
+                            a Forgot password?
+                        .or-wrapper
+                            div.line
+                            div.text or
+                        .sns-login-block.fb
+                            .icon 
+                                img(src='/src/assets/img/fb.svg')
+                            .text SIGN UP WITH FACEBOOK
+                        .sns-login-block.google
+                            .icon 
+                                img(src='/src/assets/img/google-plus.svg')
+                            .text SIGN UP WITH GOOGLE
+        script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.js" integrity="sha256-Rdji/qAPOeZSesuIRY0stuQtgS+xyXOS6Pg1l3W0wPo=" crossorigin="anonymous")
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js', integrity='sha256-8HGN1EdmKWVH4hU3Zr3FbTHoqsUcfteLZJnVmqD/rC8=', crossorigin='anonymous')
+
+        script.
+            $(document).ready(function() {
+                var fp = $('#fullpage').fullpage({
+                    //options here
+                    licenseKey: null,
+                    autoScrolling:true,
+                    parallax: false,
+                    fadingEffect: true,
+                    parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+                    scrollHorizontally: false,
+                    anchors:['section-0', 'section-1', 'section-2']
+                });
+                $('input').iCheck({
+                    checkboxClass: 'icheckbox_flat-green',
+                    radioClass: 'iradio_flat-green'
+                });
+                $('img.password-visible').click(function(){
+                    const input = $(this).parent().find('input')
+                     input.attr('type') ===  'text'
+                    ? input.attr('type', 'password')
+                    :input.attr('type', 'text')
+                })
+                //methods
+                //- $.fn.fullpage.setAllowScrolling(false);
+                $('#down-arrow').click(()=>{
+                    $.fn.fullpage.moveSectionDown();
+                })
+                $('#sign-up-button').click(()=>{
+                    $('#login-wrapper').hide()
+                    $('#signup-wrapper').show()
+                })
+            });
+           

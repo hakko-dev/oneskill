@@ -1,0 +1,160 @@
+extends layout.pug
+
+block links
+    link(rel="stylesheet" href="./myskills-newskill-upload.scss")
+
+block content
+    #newskill-indicator
+        button.btn.title
+            | Add new skill or action
+        .indicator-area
+            .indicator.done
+                button.btn
+                .text Choose Platform
+            .line
+                img(src="/src/assets/img/line-active.svg")
+            .indicator.done
+                button.btn
+                .text Skill Info
+            .line
+                img(src="/src/assets/img/line-active.svg")
+            .indicator.current
+                button.btn
+                .text Upload Image
+            .line
+                img(src="/src/assets/img/line.svg")
+            .indicator.future
+                button.btn
+                .text Select Plan
+            .line
+                img(src="/src/assets/img/line.svg")
+            .indicator.future
+                button.btn
+                .text Checkout
+    #stage-container
+        #stage-title
+            .left
+                .number 3
+                .text
+                    .top Upload Image for skill
+                    .bottom Please upload logo image for your skill icon. Uploaded images will be covered with Amazon Skill icon.
+            .right
+                button.btn Save changes
+        .image-row
+            .image-area
+                .uploaded
+                    img(src='/src/assets/img/sample-img-1.jpg')
+                    .mask
+                        | Skill Name
+                .not-uploaded(style="display: none;")
+                    .dot-line
+                        div
+                            img(src='/src/assets/img/upload-image.svg')
+                            .big-title Small Image
+                            .small-desc
+                                | Size: 256 × 256
+                                br
+                                | Format: PNG    
+            .text-area
+                .title-area
+                    img(src='/src/assets/img/title-icon.svg')
+                    | Upload a small image for skill
+                .desc-area
+                    | Small image is for Amazon Alexa Skill market icon.
+                .button-area
+                    button.btn.upload Upload
+                    button.btn.db(data-toggle="modal" data-target="#select-image-modal") Choose from DB
+                    .check
+                        input#sm-img-banner(type="checkbox")
+                        label(for="sm-img-banner") Use Skill name title banner
+        .image-row
+            .image-area
+                .dot-line
+                    div
+                        img(src='/src/assets/img/upload-image.svg')
+                        .big-title Large Image
+                        .small-desc
+                            | Size: 1024 × 1024
+                            br
+                            | Format: PNG    
+            .text-area
+                .title-area
+                    img(src='/src/assets/img/title-icon.svg')
+                    | Upload a large image for skill
+                .desc-area
+                    | Large image is for Amazon Alexa Skill market detail page.
+                .button-area
+                    button.btn.upload Upload
+                    button.btn.db(data-toggle="modal" data-target="#select-image-modal") Choose from DB
+                    .check
+                        input#lg-img-banner(type="checkbox")
+                        label(for="lg-img-banner") Use Skill name title banner
+
+        .next-button
+            button.btn NEXT
+    #select-image-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+        .modal-dialog.modal-xl.modal-dialog-centered.modal-dialog-scrollable(role='document')
+            .modal-content
+                .modal-header
+                    button.btn.title
+                        | Oneskill image database
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        img(src="/src/assets/img/close-x.svg" aria-hidden='true')
+                .modal-body
+                    .image-area
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+                        a
+                            img(src='/src/assets/img/sample-img-1.jpg')
+block append scripts
+    script.
+        $(function(){
+            $('.image-area > a').click(function(){
+                $('#select-image-modal').modal('hide')
+            })
+        })
+        

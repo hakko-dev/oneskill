@@ -1,0 +1,59 @@
+@import "./mixin";
+
+html {
+  font-size: 62.5%;
+}
+* {
+  font-family: "Montserrat", sans-serif;
+}
+.green {
+  color: #31a79b !important;
+}
+
+.size-visible {
+  display: none !important;
+}
+@include sm {
+  .size-visible.sm {
+    display: block !important;
+  }
+}
+@include md {
+  .size-visible.md {
+    display: block !important;
+  }
+  html {
+    font-size: 7px;
+  }
+}
+@include lg {
+  .size-visible.lg {
+    display: block;
+  }
+  html {
+    font-size: 8px;
+  }
+}
+@include xl {
+  html {
+    font-size: 9px;
+  }
+}
+button,
+input,
+textarea {
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+.text-left {
+  text-align: left !important;
+}
+   
+#content{
+    padding-top: 11.2rem;
+}
+label{
+  margin: 0;
+}

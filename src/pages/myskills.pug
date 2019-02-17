@@ -1,0 +1,83 @@
+extends layout.pug
+
+block links
+    link(rel="stylesheet" href="./myskills.scss")
+
+block content
+    #stage-container
+        #stage-title
+            .left
+                .text
+                    .top My Skills
+                    .bottom To go to the board, click your skill below or add a new skill or action.
+            .right
+                input.form-control.search-skill(type="text" placeholder="Search my skill")
+                a.btn.search-icon
+                    img(src='/src/assets/img/search-icon.svg')
+        
+        .skills-area
+            .skill
+                .image-area
+                    .uploaded
+                        img(src='/src/assets/img/sample-img-1.jpg')
+                        .mask
+                            | Short Name
+                            .logos
+                                img(src='/src/assets/img/alexa-logo.svg')
+                            button.btn.type.basic BASIC
+                            .hover-btns
+                                button.btn.bordered Check Status
+                                button.btn Go to Board
+                ul
+                    li Skill : On Air
+                    li Action: On Air
+            .skill
+                .image-area
+                    .uploaded
+                        img(src='/src/assets/img/sample-img-1.jpg')
+                        .mask
+                            | A Long Skill Action Name
+                            .logos
+                                img(src='/src/assets/img/google-assistant-logo.svg')                            
+                            button.btn.type.economy ECONOMY
+                            .hover-btns
+                                button.btn.bordered Check Status
+                                button.btn Go to Board
+                ul
+                    li.off Skill : Received
+
+            .skill
+                .image-area
+                    .uploaded
+                        img(src='/src/assets/img/sample-img-1.jpg')
+                        .mask
+                            | Action Name
+                            .logos
+                                img(src='/src/assets/img/google-assistant-logo.svg')
+                                img(src='/src/assets/img/alexa-logo.svg')
+                            button.btn.type.premium PREMIUM
+                            .hover-btns
+                                button.btn.bordered Check Status
+                                button.btn Go to Board
+                ul
+                    li.off Skill : Received
+            .skill.add-new
+                .image-area
+                     .dot-line
+                            div
+                                img(src='/src/assets/img/plus.svg')
+                                .big-title 
+                                    | Add new 
+                                    br
+                                    | Skill or Action
+                       
+        
+        
+block append scripts
+    script.
+        $(function(){
+            $('.add-new').click(function(){
+                location.href='/src/pages/myskills-newskill.html'
+            })
+        })
+        
