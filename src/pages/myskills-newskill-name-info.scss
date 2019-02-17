@@ -62,7 +62,10 @@
     }
 }
 textarea{
-    width: 95.9rem;
+    width: 78.9rem;
+    @include xs{
+        width: 100%;
+    }
     height: 13.4rem;
     border-radius: 0.8rem;
     font-size: 1.6rem;
@@ -84,6 +87,9 @@ textarea{
     margin-top: 2.5rem;
     .lang{
         margin-right: 4.4rem;
+        @include xs{
+            margin-right: 2rem;
+        }
         display: flex;
         align-items: center;
         &:last-child{

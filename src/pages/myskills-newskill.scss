@@ -5,8 +5,18 @@
 
 .card-wrapper{
     display: flex;
+    @include xs{
+        flex-direction: column;
+    }
     .card{
         width: calc((100% - 2.6rem * 2) / 3);
+        @include xs{
+            width: 100%;
+            margin-bottom: 2rem;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
         padding: 4.5rem 3.9rem;
         border-radius: 0.5rem;
         box-shadow: -2px 11px 35px -3px rgba(90, 142, 137, 0.13);

@@ -6,12 +6,18 @@
 .layout{
     display: flex;
     justify-content: center;
+    @include xs{
+        flex-direction: column;
+    }
     >.area{
         border-radius: 1rem;
         box-shadow: -2px 11px 35px -3px rgba(90, 142, 137, 0.13);
         background-color: #ffffff;
         &.receipt{
             width: 86.8rem;
+            @include xs{
+                width: 100%;
+            }
         }
         &.proceed{
             width: 37.9rem;

@@ -1,3 +1,5 @@
+@import '_mixin';
+
 #header{
     display: flex;
     position: fixed;
@@ -10,7 +12,16 @@
     background-color: #ffffff;
     padding: 0 8rem;
     z-index: 999;
+    @include xs{
+        flex-direction: column;
+      
+    }
     .profile{
+        @include xs{
+            position: absolute;
+            right: 2rem;
+            top: 2.35rem;
+        }
         img{
             width: 5.5rem;
             height: 5.5rem;
@@ -21,15 +32,29 @@
     }
     .left-header-items{
         display: flex;
+        @include xs{
+            flex-direction: column;
+            align-items: center;
+        }
         .logo{
+            @include xs{
+                margin-top: 2rem;
+            }
             img{
                 height: 2.7rem;
+                @include xs{
+                    height: 3.7rem;
+                }
             }
         }
         .menus{
             margin-left: 6.68rem;
             display: flex;
             align-items: center;
+            @include xs{
+                margin-left: 0;
+                margin-top: 2rem;
+            }
             ul{
                 margin:0;
                 padding:0;
