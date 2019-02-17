@@ -2,24 +2,210 @@ extends layout.pug
 
 block links
     link(rel="stylesheet" href="./myskills-board.scss")
+    link(rel='stylesheet', href='/src/assets/lib/bootstrap-datetimepicker.min.css')
 
 block content
-    #stage-container
+    #stage-container.clearfix
+        .left#left-sidebar
+            .title Skill name example
+            .desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis lectus in nunc ultricies vulputate sit amet iaculis metus.
+            .title PLATFORM
+            .platform-row
+                img(src='/src/assets/img/alexa-logo.svg')
+                img(src='/src/assets/img/google-assistant-logo.svg')
+            button.btn.add-platform
+                img
+                span Add Platform
+            .title PLAN INFORMATION
+            button.btn.type.basic BASIC
+            ul
+                li Up to 500 characters per postings
+                li 5 cast postings per day
+                li 1 cast attachment per day
+                li Scheduled posting enable
+            
+            button.btn.type.premium.upgrade PLAN UPGRADE
+            ul.upgrade.mb-0
+                li No Ads
+                li Unlimited posting characters
+                li Unlimited cast postings
+                li Unlimited cast attachments
+                li BGM insert to posting
+                li View other users’ boards
+        .right#right-sidebar 
+            button.btn.type.premium.upgrade PLAN UPGRADE
+            ul.upgrade
+                li No Ads
+                li Unlimited characters and postings
+                li BGM and world view function
+            .ad-card
+                img(src='https://apptooltester.com/wp-content/uploads/2017/06/How-to-make-a-game-app-banner.jpg')
+                .bottom-area
+                    .left
+                        .title Get the best recharge options suitable for echarge options suitable for
+                        .company getsmartapp.com
+                    .right
+                        button.btn Install Now
+            .ad-card
+                img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzeeChq2Q7mwqSPFkVPUNHdkh3W9-LGk3x8GTQdAAEpy5PA_s')
+                .bottom-area
+                    .left
+                        .title Get the best recharge options suitable for echarge options suitable for
+                        .company getsmartapp.com
+                    .right
+                        button.btn Install Now
+            .ad-card
+                img(src='https://apptooltester.com/wp-content/uploads/2017/06/How-to-make-a-game-app-banner.jpg')
+                .bottom-area
+                    .left
+                        .title Get the best recharge options suitable for echarge options suitable for
+                        .company getsmartapp.com
+                    .right
+                        button.btn Install Now
+            .ad-card
+                img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzeeChq2Q7mwqSPFkVPUNHdkh3W9-LGk3x8GTQdAAEpy5PA_s')
+                .bottom-area
+                    .left
+                        .title Get the best recharge options suitable for echarge options suitable for
+                        .company getsmartapp.com
+                    .right
+                        button.btn Install Now
         #stage-title
             .left
                 .text
-                    .top Skill name example board
-                    .bottom 
-                        | skill welcome message setup
-    .layout-area
-        .left
-            | d
-        .center
-            | d
-        .right  
-            | d      
-        
-        
+                    .top 
+                        | Skill name example board
+                        button.btn.type.premium PREMIUM
+                    .bottom(
+                        data-container="#premium-new-menu" 
+                        data-toggle="popover" 
+                        data-placement="right" 
+                        data-html="true"
+                        data-content="New menu for Premium user!<br/> Setup mood with music!"
+                    )
+                        span#premium-new-menu skill welcome message setup
+        .layout-area
+            .center
+                .new-post-card.opened
+                    .not-opened What do you want to cast?
+                    .opened 
+                        .section
+                            .left
+                                input.form-control(type="text" placeholder="What is title of the post?")
+                            .right
+                                .vertical-center
+                                    input#read-time(type="checkbox")
+                                    label(for="read-time") Read time
+                        .border-vert
+                        .section
+                            .left
+                                textarea.form-control(placeholder="What do you want to cast?")
+                                .collapsing-area
+                                    .not-collapse
+                                        .vertical-center
+                                            input#attachment(type="checkbox")
+                                            label(for="attachment") Attachment
+                                    .is-collapse
+                                        .left
+                                            .caution
+                                                | click to see rules by attachment file category
+                                            .files
+                                                ul
+                                                    li 
+                                                        | filename.jpg 
+                                                        a 
+                                                            img(src='/src/assets/img/close-x-red.svg')
+                                                    li 
+                                                        | filename2.jpg 
+                                                        a 
+                                                            img(src='/src/assets/img/close-x-red.svg')
+                                        .right
+                                            button.btn.upload Upload
+                                .collapsing-area
+                                    .not-collapse
+                                        .vertical-center
+                                            input#cast-schedule(type="checkbox")
+                                            label(for="cast-schedule") Cast Schedule
+                                    .is-collapse
+                                        .schedule
+                                            span.title cast starts
+                                            .input-group
+                                                .input-group-prepend
+                                                    span.input-group-text @
+                                                input.form-control#start-time(type='text' )
+                                        .schedule
+                                            span.title cast ends
+                                            .input-group
+                                                .input-group-prepend
+                                                    span.input-group-text @
+                                                input.form-control#end-time(type='text' )
+
+                            .right
+                                span dd
+                        .section.buttons
+                            button.btn.cancel Cancel
+                            button.btn.done Done
+                
+                .date-feed-list
+                    span.date 15 Fev 2019
+                    each val in [0,0,0,0,0,0,0,0]
+                        .feed
+                            .media
+                                img.profile.align-self-start(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzix6zlJLz7MDcz907yfj-wRJnZ1FvktyrFmfJYuEPPOV7jVv52g')
+                                .media-body
+                                    .head
+                                        .left
+                                            .title Morbi tempor sem ut pharetra consequat
+                                            .time 06:18 am
+                                        .right
+                                            img(src='/src/assets/img/alexa-logo.svg')
+                                            span 12/45
+                                            img(src='/src/assets/img/google-assistant-logo.svg')
+                                            span 12/45
+                                    .body 
+                                        | Ocean breeze, salty air, sun kissed hair. That endless summer take me there. Ocean breeze, salty air, sun kissed hair. That endless summer take me there. Ocean breeze, salty air, sun kissed hair. That endless summer take me there. Ocean breeze, salty air, sun kissed hair. That endless summer take me there.
+                            .actions
+                                a
+                                    img(src='/src/assets/img/delete.svg')
+                                    span.edit Edit
+                                a
+                                    img(src='/src/assets/img/delete.svg')
+                                    span.delete Delete
 block append scripts
+    script(src='/src/assets/lib/jquery.sticky-sidebar.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js', integrity='sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=', crossorigin='anonymous')
+    script(src='/src/assets/lib/bootstrap-datetimepicker.min.js')
+
     script.
-      
+        $(function(){
+            $('.collapsing-area>.not-collapse input').on('ifChecked', function(event){
+                $(this).closest('.collapsing-area').find('.is-collapse').addClass('show')
+            });
+             $('.collapsing-area>.not-collapse input').on('ifUnchecked', function(event){
+                $(this).closest('.collapsing-area').find('.is-collapse').removeClass('show')
+            });
+            $('#left-sidebar').stickySidebar({
+                topSpacing: 112,
+                bottomSpacing: 50
+            });
+            $('#right-sidebar').stickySidebar({
+                topSpacing: 112,
+            });
+            $('.not-opened').click(function(){
+                $(this).parent().addClass('opened')
+            })
+            $('button.cancel').click(function(){
+                $('.new-post-card').removeClass('opened')
+            })
+            
+            //- $('#start-time').datetimepicker({});
+            //- $('#end-time').datetimepicker({
+            //-     useCurrent: false //Important! See issue #1075
+            //- });
+            //- $("#start-time").on("dp.change", function (e) {
+            //-     $('#end-time').data("DateTimePicker").minDate(e.date);
+            //- });
+            //- $("#end-time").on("dp.change", function (e) {
+            //-     $('#start-time').data("DateTimePicker").maxDate(e.date);
+            //- });
+        })

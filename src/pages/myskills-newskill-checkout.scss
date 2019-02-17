@@ -3,174 +3,153 @@
 @import '../styles/newskill-indicator.scss';
 @import '../styles/newskill.scss';
 
-.plans-wrapper{
+.layout{
     display: flex;
     justify-content: center;
-    align-items: center;
-    .plan{
-        &.selected{
-            outline: 1.4px solid #31a79b;
-            .selected-badge{
-                display: block;
-            }
+    >.area{
+        border-radius: 1rem;
+        box-shadow: -2px 11px 35px -3px rgba(90, 142, 137, 0.13);
+        background-color: #ffffff;
+        &.receipt{
+            width: 86.8rem;
         }
-        .selected-badge{
-            img{
-                width: 1.57rem;
-                height: 1.07rem;
-                margin-right: 0.43rem;
-            }
-            z-index: 6;
-            position: absolute;
-            top:-2.05rem;
-            left: calc(50% - 6.7rem);
-            display: none;
-            width: 13.4rem;
-            height: 4.1rem;
-            border-radius: 0.4rem;
-            box-shadow: 0 22px 34px 0 rgba(102, 137, 163, 0.29);
-            background-color: #31a79b;
-            font-size: 1.5rem;
-            font-weight: 600;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: center;
-            color: #ffffff;
-        }
-        position: relative;
-        border-radius: 0.4rem;   
-        background-color: #ffffff;   
-        box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.1);
-        .recommended{
-            display: block;
-            margin: auto;
-            margin-bottom: 1.46rem;
-            width: 12.29rem;
-            height: 2.34rem;
-            border-radius: 0.17rem;
-            background-color: #ffb34b;
-            font-size: 1rem;
-            font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: center;
-            color: #ffffff;
-            text-transform: uppercase;
-        }
-        &.economy, &.basic{
-            width: 34.08rem;
-            height: 44.59rem;    
-            z-index: 4;
-            padding: 5rem 3.7rem;
-        }
-        &.premium{
-            z-index: 5;
-            width: 35.68rem;
-            height: 55.79rem;
-            box-shadow: 0 6px 35px 0 rgba(0, 0, 0, 0.2);
-            padding: 4.5rem 4.4rem;
+        &.proceed{
+            width: 37.9rem;
+            margin-left: 3.2rem;
+            height: 100%;
         }
         .title{
-            font-size: 2rem;
-            font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: center;
-            color: #242f40;  
-            margin-bottom: 3rem;        
-        }
-        .price{
-            text-align: center;
-            margin-bottom: 4rem;
-            .dollar{
-                font-size: 2rem;
-                font-weight: normal;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                color: #242f40;
-            }
-            .number{
-                font-size: 5rem;
-                font-weight: bold;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                text-align: center;
-                color: #242f40;
-            }
-            .mo{
-                font-size: 1.8rem;
-                font-weight: normal;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                color: #5b6b82;
-              
-            }
-        }
-        ul{
-            list-style: none;
-            font-size: 1.4rem;
+            font-size: 2.3rem;
             font-weight: 600;
             font-style: normal;
             font-stretch: normal;
-            letter-spacing: -0.3px;
-            color: #5b6b82;
-            margin-left: -2rem;
-            li{
-                margin-bottom: 1.4rem;
-                position: relative;
-                span{
-                    position: relative;
-                    left: 1.5rem;
-                }
-            }
-            li::before {
-                position: absolute;
-                top: 0px;
-                left: 0;
-                margin-right: 1.2rem;
-                content: "";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-                background-image: url('/src/assets/img/check-mark-button.svg');
-                display: inline-block; /* Needed to add space between the bullet and the text */ 
-                width: 1.92rem; /* Also needed for space (tweak if needed) */
-                height: 1.92rem;
-                background-size: contain;
-                background-repeat: no-repeat;
-                margin-left: -1em; /* Also needed for space (tweak if needed) */
-            }
-            li.warning::before{
-                background-image: url('/src/assets/img/warning-icon.svg');
-            }
+            line-height: normal;
+            letter-spacing: normal;
+            color: #31a79b;
         }
-        .choose-btn{
-            position: absolute;
-            bottom: 5rem;
-            left: calc(50% - 9.1rem);
-            display: block;
-            text-transform: uppercase;
-            border: 1px solid #5b6b82;
-            width: 18.2rem;
-            height: 4.9rem;
-            border-radius: 0.4rem;
-            font-size: 1.4rem;
-            font-weight: bold;
+        padding: 4.5rem 3rem 6rem;
+        tr.border, td.border{
+            border: 0 !important;
+            border-bottom: 1px solid #e7e8ec !important;
+        }
+        table{
+            margin-top: 5.5rem;
+        }
+        td.bold{
+            font-size: 1.8rem;
+            font-weight: 600;
             font-style: normal;
             font-stretch: normal;
             line-height: normal;
             letter-spacing: normal;
-            color: #5b6b82;
-            margin: auto;
+            color: #1f2229;
+        }
+        td.light{
+            font-size: 1.8rem;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #1f2229;
+        }
+        td{
+            padding: 1.7rem 0;
+            img{
+                width: 2rem;
+                height: 2rem;
+                margin-right: 1.4rem;
+            }
+        }
+        td.gray{
+            font-size: 1.8rem;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #9da8bb;
+        }
+        td.padding-top{
+            padding-top: 4.3rem;
+        }
+        td.price{
+            font-size: 2.5rem;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: right;
+            color: #4786ff;
+        }
+        thead > tr > th{
+            font-size: 1.8rem;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #9da8bb;
+          
+            &:nth-child(1){
+                width: 30.6rem;
+            }
+            &:nth-child(2){
+                width: 15.9rem;
+            }
+            &:nth-child(3){
+                width: 15.1rem;
+            }
+            &:nth-child(4){
+                width: 19.2rem;
+            }
+        }
+        .card-list{
+            margin-top: 5.5rem;
+            .card-item{
+                margin-bottom: 2.4rem;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                display: flex;
+                align-items: center;
+                >img.logo{
+                    flex-shrink: 0;
+                    flex-grow: 0;
+                    width: 6.6rem;
+                    height: 4.6rem;
+                }
+                .text{
+                    flex-grow: 1;
+                    margin-left: 2.4rem;
+                    >.top{
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: 0px;
+                        color: #1f2229;
+                    }
+                    >.bottom{
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 2.21;
+                        letter-spacing: normal;
+                        color: #cacaca;
+                      
+                    }
+                }
+                >img.arrow{
+                    flex-shrink: 0;
+                    flex-grow: 0;
+                    width: 0.8rem;
+                    height: 1.4rem;
+                }
+            }
         }
     }
 }

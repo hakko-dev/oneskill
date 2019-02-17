@@ -1,0 +1,28 @@
+@import '../styles/mixin';
+@import '../styles/header.scss';
+@import '../styles/newskill-indicator.scss';
+@import '../styles/newskill.scss';
+
+.layout{
+    display: flex;
+    justify-content: center;
+    >.area{
+        border-radius: 1rem;
+        box-shadow: -2px 11px 35px -3px rgba(90, 142, 137, 0.13);
+        background-color: #ffffff;
+        .head{
+            padding: 2.6rem 4rem;
+            border-bottom: 1px solid #e7e7e7;
+            font-size: 1.8rem;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: -0.04rem;
+            color: #404040;
+        }
+        .body{
+
+        }
+    }
+}

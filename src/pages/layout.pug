@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-html
+html(lang="en")
     head
         title One Skill
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no')
+
         link(href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet")
         link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
         link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/all.css', integrity='sha256-KS/KA6l6/TgimcBRobFX07zO4LAjYASrXfF79TFBk1Q=', crossorigin='anonymous')
@@ -23,5 +26,6 @@ html
                         checkboxClass: 'icheckbox_flat-green',
                         radioClass: 'iradio_flat-green'
                     });
+                    $('[data-toggle="popover"]').popover()
                 })
                  

@@ -1,0 +1,144 @@
+extends layout.pug
+
+block links
+    link(rel="stylesheet" href="./myskills-setup.scss")
+    link(rel='stylesheet', href='/src/assets/lib/bootstrap-datetimepicker.min.css')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css', rel='stylesheet')
+
+block content
+    #stage-container.clearfix
+        .left#left-sidebar
+            .title Skill name example
+            .desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis lectus in nunc ultricies vulputate sit amet iaculis metus.
+            .title PLATFORM
+            .platform-row
+                img(src='/src/assets/img/alexa-logo.svg')
+                img(src='/src/assets/img/google-assistant-logo.svg')
+            button.btn.add-platform
+                img
+                span Add Platform
+            .title PLAN INFORMATION
+            button.btn.type.premium PREMIUM
+            ul.upgrade.mb-0
+                li No Ads
+                li Unlimited posting characters
+                li Unlimited cast postings
+                li Unlimited cast attachments
+                li BGM insert to posting
+                li View other users’ boards
+        
+        .layout-area
+            .center
+                #stage-title
+                    .left
+                        .text
+                            .top 
+                                | SKILL WELCOME MESSAGE
+                                button.btn.type.premium PREMIUM
+                            .bottom
+                                span skill welcome message setup
+                .situation-item
+                    img
+                    .item-card
+                        .before-edit
+                            .title Welcome Message - When Skill Starts
+                            .current 
+                                | Welcome to Skill Name Example of Samuel, powered by Oneskill.
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis lectus in nunc ultricies vulputate sit amet iaculis metus.
+                            .action-row
+                                button.btn.gray.edit-btn Edit
+                        .after-edit
+                            .title Welcome Message - When Skill Starts
+                            .text
+                                | Welcome to Skill Name Example of 
+                                input.ml-2.form-control(type='text' placeholder="name or organization")
+                            .text
+                                | powered by Oneskill.
+                            textarea
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis lectus in nunc ultricies vulputate sit amet iaculis metus.
+                            .text-count
+                                | 0/200
+                            .text
+                                input#erase-powered(type="checkbox")
+                                label.ml-2(for="erase-powered") 
+                                    | Erase “powered by Oneskill”
+                            .action-row
+                                button.btn.gray.cancel-btn Cancel
+                                button.btn.green.done-btn Done
+                .situation-item
+                    img
+                    .item-card
+                        .before-edit
+                            .title Goodbye Message - When Skill Ends
+                            .current 
+                                | Goodbye. 
+                                br
+                                | Come check out Oneskill and make your own Alexa Skill in one minute!
+                            .action-row
+                                button.btn.gray.edit-btn Edit
+                        .after-edit
+                            .title Goodbye Message - When Skill Ends
+                            textarea
+                                | Goodbye. 
+                            .text-count
+                                | 0/200
+                            .text
+                                | Come check out Oneskill and make your own Alexa Skill in one minute!
+                            .text
+                                input#erase(type="checkbox")
+                                label.ml-2(for="erase") 
+                                    | Erase “Come check out Oneskill and make your own Alexa Skill in one minute!”
+                            .action-row
+                                button.btn.gray.cancel-btn Cancel
+                                button.btn.green.done-btn Done
+                #stage-title
+                    .left
+                        .text
+                            .top(
+                                data-container=".top" 
+                                data-toggle="popover" 
+                                data-placement="right" 
+                                data-html="true"
+                                data-content="New menu for Premium user!<br/> Setup mood with music!"
+                             ) SKILL THEME MUSIC
+                            .bottom
+                                span Select from music library - currently 123 musics, updating
+                .situation-item.music
+                    .item-card
+                        .title.uppercase Current theme
+                        .current 
+                            img.icon
+                            span Gadd a tee? - Tri Toykeat
+                        .d-flex.mt-3.align-items-end
+                            .category
+                                .title.uppercase Category
+                                select.category-search.select2
+                                    option(value='AL') Piano
+                                    option(value='WY') Rab
+                                    option(value='WY') Jazz
+                            .music.ml-4
+                                .title.uppercase MUSIC    
+                                select.song-search.select2
+                                    option(value='AL') Chopin E flat minor
+                                    option(value='WY') Chopin F flat minor
+                            button.btn.play.ml-4
+                                img
+                            button.btn.apply.ml-4 Apply
+block append scripts        
+    script(src='/src/assets/lib/jquery.sticky-sidebar.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js')
+
+    script.
+        $(function(){
+            $('#left-sidebar').stickySidebar({
+                topSpacing: 112,
+                bottomSpacing: 50
+            });
+            $('.edit-btn').click(function(){
+                $(this).closest('.situation-item').addClass('editing')
+            })
+            $('.cancel-btn, .done-btn').click(function(){
+                 $(this).closest('.situation-item').removeClass('editing')
+            })
+            $('.select2').select2()
+        })
