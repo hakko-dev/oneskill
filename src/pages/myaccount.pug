@@ -5,9 +5,73 @@ block links
 
 block content
     .layout
-        .area
-            .head Profile settings
+        .left-container
+            .area
+                .head Profile settings
+                .profile-container
+                    .profile-img
+                        img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzix6zlJLz7MDcz907yfj-wRJnZ1FvktyrFmfJYuEPPOV7jVv52g')
+                    .profile-right-container
+                        .buttons-container
+                            button.btn-round.upload
+                                img(src="/src/assets/img/image.svg")
+                                span &ensp;Upload Image
+                            button.btn-round.delete
+                                img(src="/src/assets/img/delete.svg")
+                                span &ensp;Delete Image
+                        .text-container
+                            img(src="/src/assets/img/round-error-symbol.svg")
+                            span &ensp;Please check your email address
 
+                .input-container
+                    .label First name
+                    input(type="text" placeholder="Samuel")
+                .input-container
+                    .label Last name
+                    input(type="text" placeholder="Seo")
+                .btn-container
+                    button.btn
+                        .btn-text SAVE
+        .right-container
+
+            .area
+                .head Username and email settings
+                .input-container
+                    .label Username
+                    input(type="text" placeholder="ceo4949")
+                .input-container
+                    .label Email
+                    input(type="text" placeholder="ceo@nextnest.co.kr")
+                .verify
+                    .placeholder
+                    .text
+                        .text-left-container
+                            img(src="/src/assets/img/round-error-symbol.svg")
+                            span &ensp;Please check your email address
+                        div
+                            a Verify email
+
+                .btn-container
+                    button.btn
+                        .btn-text SAVE
+
+            .area.password-container
+                .head Password Settings
+                .input-container
+                    .label Current password
+                    input(type="password" placeholder="••••••••")
+                .input-container
+                    .placeholder
+                    a Forgot password?
+                .input-container
+                    .label New password
+                    input(type="password" placeholder="••••••••")
+                .input-container
+                    .label Confirm new password
+                    input(type="password" placeholder="••••••••")
+                .btn-container
+                    button.btn
+                        .btn-text SAVE
        
 block append scripts
     script.
