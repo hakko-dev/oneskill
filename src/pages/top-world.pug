@@ -1,0 +1,247 @@
+extends layout.pug
+
+block links
+    link(rel="stylesheet" href="./top-world.scss")
+    link(rel='stylesheet', href='/src/assets/lib/bootstrap-datetimepicker.min.css')
+
+block content
+    #stage-container.clearfix
+        .left#left-sidebar
+            .title Skill name example
+            .desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis lectus in nunc ultricies vulputate sit amet iaculis metus.
+            .title PLATFORM
+            .platform-row
+                img(src='/src/assets/img/alexa-logo.svg')
+                img(src='/src/assets/img/google-assistant-logo.svg')
+            button.btn.add-platform
+                img(src='/src/assets/img/group.svg')
+                span Add Platform
+            .title PLAN INFORMATION
+            button.btn.type.premium PREMIUM
+            ul.upgrade.mb-0
+                li No Ads
+                li Unlimited posting characters
+                li Unlimited cast postings
+                li Unlimited cast attachments
+                li BGM insert to posting
+                li View other users’ boards
+
+
+        .layout-area
+            .center
+                .date-feed-list
+
+                    span.date 15 Feb 2019
+                    .skillname
+                        span INSURANCE TALK
+                    #post.feed
+                        .media
+                            .media-profile-container
+                                img.profile(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzix6zlJLz7MDcz907yfj-wRJnZ1FvktyrFmfJYuEPPOV7jVv52g')
+                                .name-container
+                                    .name Frederick Sanchez
+                                    .email Frederick@gmail.com
+                            .media-body
+                                .head
+                                    .left
+                                        .title Morbi tempor sem ut pharetra consequat
+                                        .time 06:18 am
+                                    .right
+                                        img(src='/src/assets/img/alexa-logo.svg')
+                                        span 12/45
+                                        img(src='/src/assets/img/google-assistant-logo.svg')
+                                        span 12/45
+                                .body
+                                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat elementum tellus id tristique. Praesent quis vehicula tortor. Vivamus sit amet venenatis urna, vitae suscipit turpis. In placerat egestas vestibulum. Etiam et leo a libero faucibus rhoncus. Donec tincidunt est vel eleifend accumsan. Ut eget lacus quis ex hendrerit rutrum
+                    #detail.feed.detail
+                        .media
+                            .media-body
+                                .head
+                                    .left
+                                        .title POST DETAIL
+                                .body
+                                    .image-area
+                                        .uploaded
+                                            img(src='/src/assets/img/test.jpeg')
+                                            .mask
+                                                | Skill Name
+                                    .detail-area
+                                        .media-profile-container
+                                            img.profile(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzix6zlJLz7MDcz907yfj-wRJnZ1FvktyrFmfJYuEPPOV7jVv52g')
+                                            .name-container
+                                                .name Frederick Sanchez
+                                                .email Frederick@gmail.com
+                                        .text
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis lectus in nunc ultricies vulputate sit amet iaculis metus.
+                                    .info-area
+                                        .info.first Category
+                                        .info-content
+                                            img(src='/src/assets/img/alexa11.svg')
+                                            span Finance
+                                            img.google(src='/src/assets/img/google11.svg')
+                                            span Insurance
+
+                                        .info Downloads
+                                        .info-content
+                                            img(src='/src/assets/img/alexa11.svg')
+                                            span 38K
+                                            img.google(src='/src/assets/img/google11.svg')
+                                            span 38K
+                                        .info
+                                            span.info Total
+                                            span.posting 145 postings
+                                            span.info.last30 Last 30
+                                            span.posting 4 postings
+
+                    #post1.feed
+                        .media
+                            .media-body
+                                .head
+                                    .left
+                                        .title Morbi tempor sem ut pharetra consequat
+                                        .time 06:18 am
+                                    .right
+                                        img(src='/src/assets/img/alexa-logo.svg')
+                                        span 12/45
+                                        img(src='/src/assets/img/google-assistant-logo.svg')
+                                        span 12/45
+                                .body
+                                    | Ocean breeze, salty air, sun kissed hair. That endless summer take me there. Ocean breeze, salty air, sun kissed hair. That endless summer take me there. Ocean breeze, salty air, sun kissed hair. That endless summer take me there. Ocean breeze, salty air, sun kissed hair. That endless summer take me there.
+
+                    #detail1.feed.detail
+                        .media
+                            .media-body
+                                .head
+                                    .left
+                                        .title POST DETAIL
+                                .body
+                                    .image-area
+                                        .uploaded
+                                            img(src='/src/assets/img/test.jpeg')
+                                            .mask
+                                                | Skill Name
+                                    .detail-area
+                                        .media-profile-container
+                                            img.profile(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzix6zlJLz7MDcz907yfj-wRJnZ1FvktyrFmfJYuEPPOV7jVv52g')
+                                            .name-container
+                                                .name Frederick Sanchez
+                                                .email Frederick@gmail.com
+                                        .text
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis lectus in nunc ultricies vulputate sit amet iaculis metus.
+                                    .info-area
+                                        .info.first Category
+                                        .info-content
+                                            img(src='/src/assets/img/alexa11.svg')
+                                            span Finance
+                                            img.google(src='/src/assets/img/google11.svg')
+                                            span Insurance
+
+                                        .info Downloads
+                                        .info-content
+                                            img(src='/src/assets/img/alexa11.svg')
+                                            span 38K
+                                            img.google(src='/src/assets/img/google11.svg')
+                                            span 38K
+                                        .info
+                                            span.info Total
+                                            span.posting 145 postings
+                                            span.info.last30 Last 30
+                                            span.posting 4 postings
+                    .skillname
+                        span CNET
+                    #post2.feed
+                        .media
+                            .media-profile-container
+                                img.profile(src='/src/assets/img/sarah.jpeg')
+                                .name-container
+                                    .name Mollie Burke
+                                    .email mollie.burke@gmail.com
+                            .media-body
+                                .head
+                                    .left
+                                        .title Morbi tempor sem ut pharetra consequat
+                                        .time 06:18 am
+                                    .right
+                                        img(src='/src/assets/img/alexa-logo.svg')
+                                        span 12/45
+                                        img(src='/src/assets/img/google-assistant-logo.svg')
+                                        span 12/45
+                                .body
+                                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat elementum tellus id tristique. Praesent quis vehicula tortor. Vivamus sit amet venenatis urna, vitae suscipit turpis. In placerat egestas vestibulum. Etiam et leo a libero faucibus rhoncus. Donec tincidunt est vel eleifend accumsan. Ut eget lacus quis ex hendrerit
+                    #detail2.feed.detail
+                        .media
+                            .media-body
+                                .head
+                                    .left
+                                        .title POST DETAIL
+                                .body
+                                    .image-area
+                                        .uploaded
+                                            img(src='/src/assets/img/profile111.jpeg')
+                                            .mask
+                                                | Skill Name
+                                    .detail-area
+                                        .media-profile-container
+                                            img.profile(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzix6zlJLz7MDcz907yfj-wRJnZ1FvktyrFmfJYuEPPOV7jVv52g')
+                                            .name-container
+                                                .name Mollie Burke
+                                                .email mollie.burke@gmail.com
+                                        .text
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis lectus in nunc ultricies vulputate sit amet iaculis metus.
+                                    .info-area
+                                        .info.first Category
+                                        .info-content
+                                            img(src='/src/assets/img/alexa11.svg')
+                                            span Finance
+                                            img.google(src='/src/assets/img/google11.svg')
+                                            span Insurance
+
+                                        .info Downloads
+                                        .info-content
+                                            img(src='/src/assets/img/alexa11.svg')
+                                            span 38K
+                                            img.google(src='/src/assets/img/google11.svg')
+                                            span 38K
+                                        .info
+                                            span.info Total
+                                            span.posting 145 postings
+                                            span.info.last30 Last 30
+                                            span.posting 4 postings
+block append scripts
+    script(src='/src/assets/lib/jquery.sticky-sidebar.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js', integrity='sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=', crossorigin='anonymous')
+    script(src='/src/assets/lib/bootstrap-datetimepicker.min.js')
+
+    script.
+        $(function(){
+            $('.collapsing-area>.not-collapse input').on('ifChecked', function(event){
+                $(this).closest('.collapsing-area').find('.is-collapse').addClass('show')
+            });
+             $('.collapsing-area>.not-collapse input').on('ifUnchecked', function(event){
+                $(this).closest('.collapsing-area').find('.is-collapse').removeClass('show')
+            });
+            $('#left-sidebar').stickySidebar({
+                topSpacing: 112,
+                bottomSpacing: 50
+            });
+            $('#right-sidebar').stickySidebar({
+                topSpacing: 112,
+            });
+            $('.not-opened').click(function(){
+                $(this).parent().addClass('opened')
+            })
+            $('button.cancel').click(function(){
+                $('.new-post-card').removeClass('opened')
+            })
+
+            $('#post').click(function () {
+                $('#detail').toggle()
+            })
+            $('#post1').click(function () {
+                $('#detail1').toggle()
+            })
+            $('#post2').click(function () {
+                $('#detail2').toggle()
+            })
+
+        })

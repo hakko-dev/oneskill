@@ -1,7 +1,9 @@
 @import '../styles/mixin';
 @import '../styles/header.scss';
 @import '../styles/newskill.scss';
-
+#content{
+    padding-top:11.2rem
+}
 #stage-container{
     padding:0;
     >.left#left-sidebar{
@@ -12,7 +14,7 @@
         }
         .title{
             text-transform: uppercase;
-            margin-top: 3rem;
+            margin-top: 2rem;
             font-size: 1.5rem;
             font-weight: 600;
             font-style: normal;
@@ -225,7 +227,7 @@
     margin-right: 30.4rem;
     >.center{
         min-height: 2000px;
-        padding: 12rem 4rem 3rem;
+        padding: 0rem 4rem 3rem;
         flex-grow: 1;
         border-left: 1px solid #e6eaee;
         border-right: 1px solid #e6eaee;
@@ -404,11 +406,123 @@
                 line-height: 1.38;
                 letter-spacing: normal;
                 color: rgba(24, 28, 47, 0.3);
-                margin-top: 4.2rem;
+                padding-top: 4.2rem;
                 display: block;
+            }
+            .skillname{
+                width: 12.3rem;
+                height: 2.7rem;
+                border-radius: 23.5px;
+                background-color: #5abeb622;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 2rem;
+                span{
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: -0.2px;
+                    color: #31a79b;
+                }
             }
             .feed{
                 margin-top: 2.3rem;
+                &.detail{
+                    display: none;
+                    margin-top: 0rem;
+                    .media-body{
+                        background-color: #FAFBFC;
+                        box-shadow: none;
+                        border-radius: 4px;
+                        border-style: solid;
+                        border-color: #E6EAEE;
+                        border-width: 1px;
+                    }
+                    .body{
+                        display: flex;
+                        .image-area{
+                            //flex: 0 1 20%
+
+                        }
+                        .detail-area{
+                            flex: 0 1 50%;
+                            padding-left: 2rem;
+                            img.profile{
+                                width: 3.5rem;
+                                height: 3.5rem;
+                            }
+                            .name-container{
+                                align-items: center;
+                            }
+                            .name{
+                                font-size: 1.3rem;
+                            }
+                            .email{
+                                font-size: 1.1rem;
+                                margin-top: 0.1rem;
+                            }
+                            .text{
+                                margin-top: 1rem;
+                                font-size: 1.3rem;
+                                font-weight: 500;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.56;
+                                letter-spacing: -0.2px;
+                                color: #9fa9ba;
+                            }
+                        }
+                        .info-area{
+                            flex: 0 1 50%;
+                            padding-left: 2rem;
+                            .info{
+                                font-size: 1.3rem;
+                                font-weight: 600;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                color: #242f40;
+                                margin-top: 0.5rem;
+                                &.first{
+                                    margin-top: 0
+                                }
+                                &.last30{
+                                    margin-left: 0.5rem;
+                                }
+                            }
+                            .google{
+                                margin-left: 0.5rem;
+                            }
+                            .posting{
+                                font-size: 1.3rem;
+                                font-weight: 500;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.56;
+                                letter-spacing: -0.2px;
+                                color: #9fa9ba;
+                                margin-left: 0.5rem;
+
+                            }
+                            .info-content{
+                                font-size: 1.3rem;
+                                font-weight: 500;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.56;
+                                letter-spacing: -0.2px;
+                                color: #9fa9ba;
+                                span{
+                                    margin-left: 0.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
                 .actions{
                     margin-top: 1.7rem;
                     text-align: right;
@@ -434,18 +548,49 @@
                 }
             }
             .media{
+                display: block;
+                .media-profile-container{
+                    display: flex;
+                    //flex-direction: column;
+                    align-items: center;
+                }
+                .name-container{
+                    //text-align: center;
+                    padding-left: 1.2rem;
+                    .name{
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        color: #242f40;
+                        //margin-top: 1.2rem
+                    }
+                    .email{
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        color: #919eab;
+                        margin-top: 0.2rem;
+                    }
+                }
                 img.profile{
-                    width: 6rem;
-                    height: 6rem;
+                    width: 5rem;
+                    height: 5rem;
                     border-radius: 50%;
                     background: red;
                     object-fit: cover;
+                    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.22);
                 }
                 .media-body{
                     border-radius: 1px;
                     box-shadow: 0 2px 6px 0 rgba(47, 83, 151, 0.1);
                     background-color: #ffffff;
-                    margin-left: 3.2rem;
+                    margin-top: 1.5rem;
                     .head{
                         padding: 1.6rem 2.0rem;
                         display: flex;
@@ -498,6 +643,43 @@
                         line-height: 1.62;
                         letter-spacing: normal;
                         color: #202841;
+                        .image-area {
+                            overflow: hidden;
+                            position: relative;
+                            width: 9.5rem;
+                            height: 9.5rem;
+                            flex-shrink: 0;
+                            @include xs {
+                                margin-bottom: 3rem;
+                            }
+                            border-radius: 0.8rem;
+                            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.07);
+                            .uploaded {
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                                .mask {
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    right: 0;
+                                    bottom: 0;
+                                    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+                                    display: flex;
+                                    align-items: flex-end;
+                                    color: #ffffff;
+                                    padding: 1.2rem 1rem;
+                                    font-size: 1rem;
+                                    font-weight: 600;
+                                    font-style: normal;
+                                    font-stretch: normal;
+                                    line-height: 1.19;
+                                    letter-spacing: 0.06rem
+                                }
+                            }
+                        }
                     }
                 }
             }
