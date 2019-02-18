@@ -75,30 +75,85 @@ block content
             | Language Support
         .lang-row
             .lang 
-                input#us(type="checkbox")
-                label(for="us") English (US)
-                img(src='/src/assets/img/us.svg')
+                .pretty.p-svg.p-toggle.p-plain.checkboxs
+                    input#us(type='checkbox')
+                    .state.p-on
+                        img.svg(src="/src/assets/img/check-on.svg")
+                        label 
+                            | English (US) 
+                            img(src='/src/assets/img/us.svg')
+                    .state.p-off
+                        img.svg(src="/src/assets/img/check-off.svg")                    
+                        label
+                            | English (US) 
+                            img(src='/src/assets/img/us.svg')
+                
             .lang 
-                input#uk(type="checkbox")
-                label(for="uk") English (UK)
-                img(src='/src/assets/img/uk.svg')
+                .pretty.p-svg.p-toggle.p-plain.checkboxs
+                    input#uk(type='checkbox')
+                    .state.p-on
+                        img.svg(src="/src/assets/img/check-on.svg")
+                        label 
+                            | English (UK)
+                            img(src='/src/assets/img/uk.svg')
+                    .state.p-off
+                        img.svg(src="/src/assets/img/check-off.svg")                    
+                        label
+                            | English (UK)
+                            img(src='/src/assets/img/uk.svg')
             .lang 
-                input#ca(type="checkbox")
-                label(for="ca") English (Canada)
-                img(src='/src/assets/img/ca.svg')
+                .pretty.p-svg.p-toggle.p-plain.checkboxs
+                    input#ca(type='checkbox')
+                    .state.p-on
+                        img.svg(src="/src/assets/img/check-on.svg")
+                        label 
+                            | English (Canada)
+                            img(src='/src/assets/img/ca.svg')
+                    .state.p-off
+                        img.svg(src="/src/assets/img/check-off.svg")                    
+                        label
+                            | English (Canada)
+                            img(src='/src/assets/img/ca.svg')
         .lang-row
             .lang 
-                input#fr(type="checkbox")
-                label(for="fr") French
-                img(src='/src/assets/img/fr.svg')
+                .pretty.p-svg.p-toggle.p-plain.checkboxs
+                    input#fr(type='checkbox')
+                    .state.p-on
+                        img.svg(src="/src/assets/img/check-on.svg")
+                        label 
+                            | French
+                            img(src='/src/assets/img/fr.svg')
+                    .state.p-off
+                        img.svg(src="/src/assets/img/check-off.svg")                    
+                        label
+                            | French
+                            img(src='/src/assets/img/fr.svg')
             .lang 
-                input#ge(type="checkbox")
-                label(for="ge") German
-                img(src='/src/assets/img/ge.svg')
+                .pretty.p-svg.p-toggle.p-plain.checkboxs
+                    input#ge(type='checkbox')
+                    .state.p-on
+                        img.svg(src="/src/assets/img/check-on.svg")
+                        label 
+                            | German
+                            img(src='/src/assets/img/ge.svg')
+                    .state.p-off
+                        img.svg(src="/src/assets/img/check-off.svg")                    
+                        label
+                            | German
+                            img(src='/src/assets/img/ge.svg')
             .lang 
-                input#jp(type="checkbox")
-                label(for="jp") Japanese
-                img(src='/src/assets/img/jp.svg')
+                .pretty.p-svg.p-toggle.p-plain.checkboxs
+                    input#jp(type='checkbox')
+                    .state.p-on
+                        img.svg(src="/src/assets/img/check-on.svg")
+                        label 
+                            | Japanese
+                            img(src='/src/assets/img/jp.svg')
+                    .state.p-off
+                        img.svg(src="/src/assets/img/check-off.svg")                    
+                        label
+                            | Japanese
+                            img(src='/src/assets/img/jp.svg')
             
         .title-area
             img(src='/src/assets/img/title-icon.svg')
@@ -110,12 +165,28 @@ block content
             span.green Learn
         .lang-row
             .lang 
-                input#kid-yes(type="radio" name="kids" checked)
-                label(for="kid-yes") Yes, it’s for under 13
+                .pretty.p-svg.p-toggle.p-plain.checkboxs
+                    input#kid-yes(type='radio' name="kids" checked)
+                    .state.p-on
+                        img.svg(src="/src/assets/img/check-on.svg")
+                        label 
+                            | Yes, it’s for under 13
+                    .state.p-off
+                        img.svg(src="/src/assets/img/check-off.svg")                    
+                        label
+                            | Yes, it’s for under 13
         .lang-row
             .lang 
-                input#kid-no(type="radio" name="kids")
-                label(for="kid-no") No, it’s not for under 13
+                .pretty.p-svg.p-toggle.p-plain.checkboxs
+                    input#kid-no(type='radio' name="kids" )
+                    .state.p-on
+                        img.svg(src="/src/assets/img/check-on.svg")
+                        label 
+                            | No, it’s not for under 13
+                    .state.p-off
+                        img.svg(src="/src/assets/img/check-off.svg")                    
+                        label
+                            | No, it’s not for under 13
 
         .title-area
             img(src='/src/assets/img/title-icon.svg')
@@ -124,12 +195,28 @@ block content
             | How do you like to cast posting to listeners?
         .lang-row
             .lang 
-                input#q-anyone(type="radio" name="qualification" checked)
-                label(for="q-anyone") Anyone who activated the skill
+                .pretty.p-svg.p-toggle.p-plain.checkboxs
+                    input#q-anyone(type='radio' name="qualification" checked)
+                    .state.p-on
+                        img.svg(src="/src/assets/img/check-on.svg")
+                        label 
+                            | Anyone who activated the skill
+                    .state.p-off
+                        img.svg(src="/src/assets/img/check-off.svg")                    
+                        label
+                            | Anyone who activated the skill
         .lang-row
             .lang 
-                input#q-permission(type="radio" name="qualification")
-                label(for="q-permission") Anyone who activated the skill and get permission from you
+                .pretty.p-svg.p-toggle.p-plain.checkboxs
+                    input#q-permission(type='radio' name="qualification")
+                    .state.p-on
+                        img.svg(src="/src/assets/img/check-on.svg")
+                        label 
+                            |Anyone who activated the skill and get permission from you
+                    .state.p-off
+                        img.svg(src="/src/assets/img/check-off.svg")                    
+                        label
+                            | Anyone who activated the skill and get permission from you
 
         .next-button
             a(href="/src/pages/myskills-newskill-upload.pug")

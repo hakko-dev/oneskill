@@ -320,6 +320,18 @@
                                 &.show{
                                     display: flex;
                                 }
+                                &.schedule-wrapper{
+                                    justify-content: flex-start;
+                                }
+                                @include xs{
+                                    &.attachment{
+                                        flex-direction: column;
+                                        >.right{
+                                            margin-top: 2rem;
+                                        }
+                                    }
+                                }
+                                
                                 padding-top: 1rem;
                                 padding-left: 3rem;
                                 justify-content: space-between;
@@ -362,8 +374,14 @@
                                         text-align: center;
                                         color: #4786ff;
                                     }
+                            
                                 }
+                                
                                 .schedule{
+                                    margin-right: 1.6rem;
+                                    &:last-child{
+                                        margin-right: 0;
+                                    }
                                     .input-group-text{
                                         border-radius: 0.4rem;
                                         background-color: white;
@@ -376,6 +394,19 @@
                                         border-bottom-left-radius: 0;
                                         border-left: 0;
                                     }
+                                    img{
+                                        width: 2.1rem;
+                                        height: 2.1rem;
+                                    }
+                                    >.title{
+                                        font-size: 1.2rem;
+                                        font-weight: 600;
+                                        font-style: normal;
+                                        font-stretch: normal;
+                                        line-height: normal;
+                                        letter-spacing: normal;
+                                        color: #9fa9ba;
+                                    }
                                 }
                                 
                             }
@@ -387,16 +418,23 @@
                         right: 1.8rem;
                         top: 1.7rem;
                         padding: 0.8rem 1.9rem;
+                        .checkbox-area{
+                            margin-bottom: 1.6rem;
+                            &:last-child{
+                                margin-bottom:0;
+                            }
+                        }
                     }
-                    label{
+                    
+                    .checkboxs{
                         font-size: 1.4rem;
                         font-weight: 500;
-                        font-style: normal;
-                        font-stretch: normal;
-                        line-height: normal;
-                        letter-spacing: normal;
                         color: #9fa9ba;
-                        margin-left: 0.86rem;
+                        // margin-left: 0.86rem;
+                    }
+                    label{
+                       
+                        
                     }
                     
                 }

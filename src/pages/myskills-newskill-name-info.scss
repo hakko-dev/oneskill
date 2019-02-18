@@ -95,7 +95,7 @@ textarea{
         &:last-child{
             margin-right: 0;
         }
-        label{
+        div:not(.pretty) .label{
             margin:0;
             display: inline-block;
             margin-left: 1.26rem;
@@ -107,6 +107,17 @@ textarea{
             letter-spacing: normal;
             color: #929699;
         }
+        .pretty{
+            font-size: 1.5rem;
+            label{
+                margin-left: 1rem;
+                img{
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+        }
+
         img{
             display: inline-block;
             width: 1.8rem;

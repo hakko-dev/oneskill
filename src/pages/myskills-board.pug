@@ -93,19 +93,29 @@ block content
                             .left
                                 input.form-control(type="text" placeholder="What is title of the post?")
                             .right
-                                .vertical-center
-                                    input#read-time(type="checkbox")
-                                    label(for="read-time") Read time
+                                .pretty.p-smooth.p-svg.p-toggle.p-plain.checkboxs
+                                        input(type='checkbox')
+                                        .state.p-on
+                                            img.svg(src="/src/assets/img/check-on.svg")
+                                            label Read time
+                                        .state.p-off
+                                            img.svg(src="/src/assets/img/check-off.svg")                    
+                                            label Read time
                         .border-vert
                         .section
                             .left
                                 textarea.form-control(placeholder="What do you want to cast?")
                                 .collapsing-area
                                     .not-collapse
-                                        .vertical-center
-                                            input#attachment(type="checkbox")
-                                            label(for="attachment") Attachment
-                                    .is-collapse
+                                        .pretty.p-smooth.p-svg.p-toggle.p-plain.checkboxs
+                                            input#attachment(type='checkbox')
+                                            .state.p-on
+                                                img.svg(src="/src/assets/img/check-on.svg")
+                                                label Attachment
+                                            .state.p-off
+                                                img.svg(src="/src/assets/img/check-off.svg")                    
+                                                label Attachment
+                                    .is-collapse.attachment
                                         .left
                                             .caution
                                                 | click to see rules by attachment file category
@@ -123,25 +133,58 @@ block content
                                             button.btn.upload Upload
                                 .collapsing-area
                                     .not-collapse
-                                        .vertical-center
-                                            input#cast-schedule(type="checkbox")
-                                            label(for="cast-schedule") Cast Schedule
-                                    .is-collapse
+                                        .pretty.p-smooth.p-svg.p-toggle.p-plain.checkboxs
+                                            input#cast-schedule(type='checkbox')
+                                            .state.p-on
+                                                img.svg(src="/src/assets/img/check-on.svg")
+                                                label Cast Schedule
+                                            .state.p-off
+                                                img.svg(src="/src/assets/img/check-off.svg")                    
+                                                label Cast Schedule
+                                    .is-collapse.schedule-wrapper
                                         .schedule
                                             span.title cast starts
                                             .input-group
                                                 .input-group-prepend
-                                                    span.input-group-text @
+                                                    span.input-group-text
+                                                        img(src='/src/assets/img/calendar.png')
                                                 input.form-control#start-time(type='text' )
                                         .schedule
                                             span.title cast ends
                                             .input-group
                                                 .input-group-prepend
-                                                    span.input-group-text @
+                                                    span.input-group-text
+                                                        img(src='/src/assets/img/calendar.png')
                                                 input.form-control#end-time(type='text' )
 
                             .right
-                                span dd
+                                .checkbox-area
+                                    .pretty.p-smooth.p-svg.p-toggle.p-plain.checkboxs
+                                        input(type='checkbox')
+                                        .state.p-on
+                                            img.svg(src="/src/assets/img/emoji-on.svg")
+                                            label expression
+                                        .state.p-off
+                                            img.svg(src="/src/assets/img/emoji-off.svg")                    
+                                            label expression
+                                .checkbox-area
+                                    .pretty.p-smooth.p-svg.p-toggle.p-plain.checkboxs
+                                        input(type='checkbox')
+                                        .state.p-on
+                                            img.svg(src="/src/assets/img/sound-on.svg")
+                                            label sound effect
+                                        .state.p-off
+                                            img.svg(src="/src/assets/img/sound-off.svg")                    
+                                            label sound effect
+                                .checkbox-area
+                                    .pretty.p-smooth.p-svg.p-toggle.p-plain.checkboxs
+                                        input(type='checkbox')
+                                        .state.p-on
+                                            img.svg(src="/src/assets/img/help-on.svg")
+                                            label help
+                                        .state.p-off
+                                            img.svg(src="/src/assets/img/help-off.svg")                    
+                                            label help
                         .section.buttons
                             button.btn.cancel Cancel
                             button.btn.done Done
@@ -178,11 +221,14 @@ block append scripts
 
     script.
         $(function(){
-            $('.collapsing-area>.not-collapse input').on('ifChecked', function(event){
-                $(this).closest('.collapsing-area').find('.is-collapse').addClass('show')
-            });
-             $('.collapsing-area>.not-collapse input').on('ifUnchecked', function(event){
-                $(this).closest('.collapsing-area').find('.is-collapse').removeClass('show')
+            $('.collapsing-area>.not-collapse input').on('change', function(){
+                var target = $(this).closest('.collapsing-area').find('.is-collapse')
+                if(this.checked){
+                    target.addClass('show')
+                }else{
+                    target.removeClass('show')
+                }
+                
             });
             $('#left-sidebar').stickySidebar({
                 topSpacing: 112,

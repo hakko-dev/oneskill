@@ -7,6 +7,9 @@
     >.left#left-sidebar{
         float:left;
         width: 34.1rem;
+        @include xs{
+            display: none;
+        }
         >.inner-wrapper-sticky{
             padding: 0rem 4.2rem;
         }
@@ -123,8 +126,14 @@
 }
 .layout-area{
     margin-left: 34.1rem;
+    @include xs{
+        margin-left: 0;
+    }
     >.center{
         padding: 3rem 8.4rem 3rem 4rem;
+        @include xs{
+            padding: 3rem 4rem 3rem 4rem;
+        }
         flex-grow: 1;
         border-left: 1px solid #e6eaee;
         border-right: 1px solid #e6eaee;
@@ -132,7 +141,10 @@
         .situation-item{
             margin-bottom: 3.5rem;
             display: flex;
-           
+            @include xs{
+                flex-direction: column;
+                align-items: center;
+            }
             >img{
                 width: 17.8rem;
                 height: 17.8rem;
@@ -148,12 +160,32 @@
             }
             .item-card{
                 position: relative;
+                @include xs{
+                    width: 100%;
+                }
                 .before-edit{
                     display: block;
                 }
                 .after-edit{
                     display: none;
                 }
+                @include xs{
+                    .music-wrapper{
+                        flex-wrap: wrap;
+                        .category{
+                            flex-basis: 100%;
+                        }
+                        .music{
+                            margin-top: 1rem;
+                            margin-left: 0 !important;
+                        }
+                        .btn.apply{
+                            margin-left: 0 !important;
+                            margin-top: 2rem;
+                        }
+                    }
+                }
+               
                 flex-grow: 1;
                 border-radius: 0.1rem;
                 box-shadow: 0 2px 6px 0 rgba(47, 83, 151, 0.1);
@@ -359,4 +391,9 @@ button.apply{
     width:  20px;
     box-shadow: -2px 1.8px 2px 0 rgba(47, 83, 151, 0.08);
     left: -9px;
+}
+@include xs{
+    .item-card::before{
+       display: none;
+    }
 }

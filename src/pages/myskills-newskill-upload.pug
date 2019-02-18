@@ -68,8 +68,16 @@ block content
                     button.btn.upload Upload
                     button.btn.db(data-toggle="modal" data-target="#select-image-modal") Choose from DB
                     .check
-                        input#sm-img-banner(type="checkbox")
-                        label(for="sm-img-banner") Use Skill name title banner
+                        .pretty.p-svg.p-toggle.p-plain.checkboxs
+                            input#sm-img-banner(type='checkbox')
+                            .state.p-on
+                                img.svg(src="/src/assets/img/check-on.svg")
+                                label 
+                                    | Use Skill name title banner
+                            .state.p-off
+                                img.svg(src="/src/assets/img/check-off.svg")                    
+                                label
+                                    | Use Skill name title banner
         .image-row
             .image-area
                 .dot-line
@@ -90,8 +98,16 @@ block content
                     button.btn.upload Upload
                     button.btn.db(data-toggle="modal" data-target="#select-image-modal") Choose from DB
                     .check
-                        input#lg-img-banner(type="checkbox")
-                        label(for="lg-img-banner") Use Skill name title banner
+                        .pretty.p-svg.p-toggle.p-plain.checkboxs
+                            input#lg-img-banner(type='checkbox')
+                            .state.p-on
+                                img.svg(src="/src/assets/img/check-on.svg")
+                                label 
+                                    | Use Skill name title banner
+                            .state.p-off
+                                img.svg(src="/src/assets/img/check-off.svg")                    
+                                label
+                                    | Use Skill name title banner
 
         .next-button
             button.btn NEXT
