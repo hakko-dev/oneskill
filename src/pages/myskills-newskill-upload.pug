@@ -38,15 +38,13 @@ block content
                 .text
                     .top Upload Image for skill
                     .bottom 
-                        | Please upload logo image for your skill icon. 
-                        br
-                        | Uploaded images will be covered with Amazon Skill icon.
+                        | Please upload logo image for your skill icon. Uploaded images will be covered with Amazon Skill icon.
             .right
                 button.btn Save changes
         .image-row
             .image-area
                 .uploaded
-                    img(src='/src/assets/img/sample-img-1.jpg')
+                    img(src='/src/assets/img/toy.jpeg')
                     .mask
                         | Skill Name
                 .not-uploaded(style="display: none;")
@@ -68,7 +66,7 @@ block content
                     button.btn.upload Upload
                     button.btn.db(data-toggle="modal" data-target="#select-image-modal") Choose from DB
                     .check
-                        input#sm-img-banner(type="checkbox")
+                        input#sm-img-banner(type="checkbox" checked)
                         label(for="sm-img-banner") Use Skill name title banner
         .image-row
             .image-area
@@ -106,58 +104,64 @@ block content
                 .modal-body
                     .image-area
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/car.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/toy.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/db1.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/db2.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/db3.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/db4.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/db5.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/car.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/toy.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/db1.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/db2.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/db3.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/db4.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/db5.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/car.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/toy.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/db5.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/db1.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/db2.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/db3.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/db4.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/db5.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/db1.jpeg')
                         a
-                            img(src='/src/assets/img/sample-img-1.jpg')
+                            img(src='/src/assets/img/db2.jpeg')
 block append scripts
     script.
         $(function(){
             $('.image-area > a').click(function(){
                 $('#select-image-modal').modal('hide')
+            })
+            $('#sm-img-banner').click(function(){
+                if(this.checked)
+                    $('.mask').show()
+                else
+                    $('.mask').hide()
             })
         })
         
