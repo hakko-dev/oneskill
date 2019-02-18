@@ -10,6 +10,9 @@
         >.inner-wrapper-sticky{
             padding: 0rem 4.2rem;
         }
+        @include xs{
+            display: none;
+        }
         .title{
             text-transform: uppercase;
             margin-top: 3rem;
@@ -82,6 +85,9 @@
     >.right{
         float:right;
         width: 30.4rem;
+        @include xs{
+            display: none;
+        }
         >.inner-wrapper-sticky{
             padding: 3rem 2.4rem;
         }
@@ -210,6 +216,12 @@
     padding-bottom: 1rem;
     background: white;
     z-index: 999;
+    @include xs{
+        left: 0;
+        z-index: 1;
+        right: 0;
+        margin-bottom: 0;
+    }
 }
 #stage-title .bottom{
     font-size: 1.2rem !important;
@@ -219,12 +231,18 @@
     line-height: normal;
     letter-spacing: normal;
     color: #9fa9ba;
+    @include xs{
+        font-size: 1.9rem !important;
+    }
 }
 .layout-area{
+    @include xs{
+        margin-left: 0;
+        margin-right: 0;
+    }
     margin-left: 34.1rem;
     margin-right: 30.4rem;
     >.center{
-        min-height: 2000px;
         padding: 12rem 4rem 3rem;
         flex-grow: 1;
         border-left: 1px solid #e6eaee;
@@ -409,6 +427,13 @@
             }
             .feed{
                 margin-top: 2.3rem;
+                @include xs{
+                    margin-top: 5rem;
+                    .media{
+                        flex-direction: column;
+                        position: relative;
+                    }
+                }
                 .actions{
                     margin-top: 1.7rem;
                     text-align: right;
@@ -419,11 +444,18 @@
                         font-stretch: normal;
                         line-height: 1.08;
                         letter-spacing: normal;
+                        @include xs{
+                            font-size: 1.7rem;
+                        }
                     }
                     img{
                         width: 1.5rem;
                         height: 1.8rem;
                         margin: 0 0.8rem 0 1.5rem;
+                        @include xs{
+                            width: 2.3rem;
+                            height: 2.3rem;
+                        }
                     }
                     span.edit{
                         color: #a5aebe;
@@ -440,17 +472,27 @@
                     border-radius: 50%;
                     background: red;
                     object-fit: cover;
+                    @include xs{
+                        margin-bottom: 2rem;
+                    }
                 }
                 .media-body{
                     border-radius: 1px;
                     box-shadow: 0 2px 6px 0 rgba(47, 83, 151, 0.1);
                     background-color: #ffffff;
                     margin-left: 3.2rem;
+                    @include xs{
+                        margin-left: 0;
+                    }
                     .head{
                         padding: 1.6rem 2.0rem;
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
+                        @include xs{
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
                         .left{
                             .title{
                                 font-size: 1.3rem;
@@ -461,6 +503,9 @@
                                 letter-spacing: normal;
                                 color: #202841;
                                 margin-bottom: 0.2rem;
+                                @include xs{
+                                    font-size: 2.4rem;
+                                }
                             }
                             .time{
                                 font-size: 1.2rem;
@@ -470,6 +515,10 @@
                                 line-height: normal;
                                 letter-spacing: normal;
                                 color: #919eab;
+                                @include xs{
+                                    font-size: 1.7rem;
+                                    width: 100%;
+                                }
                             }
                         }
                         .right{
@@ -480,10 +529,21 @@
                             line-height: 1;
                             letter-spacing: normal;
                             color: #202841;
+                            @include xs{
+                                position: absolute;
+                                font-size: 2rem;
+                                top: 2rem;
+                                right: 0rem;
+                                font-weight: 500;
+                            }
                             img{
                                 width: 1.8rem;
                                 height: 1.8rem;
                                 margin: 0 0.8rem 0 1.1rem;
+                                @include xs{
+                                    width: 2.3rem;
+                                    height: 2.3rem;
+                                }
                             }
                         }
                         
@@ -498,6 +558,9 @@
                         line-height: 1.62;
                         letter-spacing: normal;
                         color: #202841;
+                        @include xs{
+                            font-size: 1.9rem;
+                        }
                     }
                 }
             }

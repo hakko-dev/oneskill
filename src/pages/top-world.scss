@@ -9,6 +9,9 @@
     >.left#left-sidebar{
         float:left;
         width: 34.1rem;
+        @include xs{
+            display: none;
+        }
         >.inner-wrapper-sticky{
             padding: 0rem 4.2rem;
         }
@@ -224,9 +227,10 @@
 }
 .layout-area{
     margin-left: 34.1rem;
-    margin-right: 30.4rem;
+    @include xs{
+        margin-left: 0;
+    }
     >.center{
-        min-height: 2000px;
         padding: 0rem 4rem 3rem;
         flex-grow: 1;
         border-left: 1px solid #e6eaee;

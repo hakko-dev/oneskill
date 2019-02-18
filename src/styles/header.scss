@@ -12,22 +12,35 @@
     background-color: #ffffff;
     padding: 0 8rem;
     z-index: 999;
+    .hbg-icon{
+        display: none;
+        position: absolute;
+        left: 3rem;
+        top: 50%;
+        margin-top: -1.5rem;
+        img{
+            width: 3rem;
+        }
+    }
     @include xs{
         flex-direction: column;
-      
+        .hbg-icon{
+            display: block;
+        }
     }
     .profile{
-        @include xs{
-            position: absolute;
-            right: 2rem;
-            top: 2.35rem;
-        }
         img{
             width: 5.5rem;
             height: 5.5rem;
             background: grey;
             border-radius: 50%;
             box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.22);
+        }
+        @include xs{
+            position: absolute;
+            right: 3rem;
+            top: 50%;
+            margin-top: -2.75rem;
         }
     }
     .left-header-items{
@@ -38,7 +51,9 @@
         }
         .logo{
             @include xs{
-                margin-top: 2rem;
+                position: absolute;
+                top: 50%;
+                margin-top: -1.85rem;
             }
             img{
                 height: 2.7rem;
@@ -54,6 +69,7 @@
             @include xs{
                 margin-left: 0;
                 margin-top: 2rem;
+                display: none;
             }
             ul{
                 margin:0;
@@ -76,6 +92,44 @@
                 letter-spacing: -0.5px;
                 color: #404040;
             }
+        }
+    }
+}
+#mobile-menu{
+    display: none;
+}
+@include xs{
+    #mobile-menu{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        z-index: 999;
+        align-items: center;
+        justify-content: center;
+        ul{
+            list-style: none;
+            padding:0;
+            margin:0;
+            li{
+                font-size: 5rem;
+                text-align: center;
+                font-weight: 400;
+                margin-bottom: 2rem;
+                &:last-child{
+                    margin-bottom:0;
+                }
+                img{
+                    
+                }
+            }
+        }
+    }
+    body.open-menu{
+        #mobile-menu{
+            display: flex;
         }
     }
 }

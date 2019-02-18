@@ -8,6 +8,9 @@
 }
 .card-wrapper{
     display: flex;
+    @include xs{
+        flex-direction: column;
+    }
     .card{
         position: relative;
         width: calc((100% - 2.6rem * 2) / 3);
@@ -16,6 +19,14 @@
         box-shadow: -2px 11px 35px -3px rgba(90, 142, 137, 0.13);
         background-color: #ffffff;
         margin-right: 2.6rem;
+        @include xs{
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 3rem;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
         >button{
             position: absolute;
             top:-1.9rem;
