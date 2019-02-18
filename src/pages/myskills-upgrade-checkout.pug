@@ -1,12 +1,12 @@
 extends layout.pug
 
 block links
-    link(rel="stylesheet" href="./myskills-newskill-checkout.scss")
+    link(rel="stylesheet" href="./myskills-upgrade-checkout.scss")
 
 block content
     #newskill-indicator
         button.btn.title
-            | Add new skill or action
+            | PLAN UPGRADE
         .indicator-area
             .indicator.done
                 button.btn
@@ -51,17 +51,7 @@ block content
                             th.text-right RATE
                             th.text-right RATE
                     tbody
-                        tr.size-visible.xs.table-row
-                            td(colspan=3).bold 
-                                img(src='/src/assets/img/alexa-logo.svg')
-                                | Skill for Amazon Alexa
-                        tr.border
-                            td.bold.size-invisible.xs
-                                img(src='/src/assets/img/alexa-logo.svg')
-                                | Skill for Amazon Alexa
-                            td
-                            td.text-right.light 89.99 USD
-                            td.text-right.bold 900,00 USD
+
                         tr.size-visible.xs.table-row
                             td(colspan=3).bold 
                                 img(src='/src/assets/img/asset-2-copy-1.svg')

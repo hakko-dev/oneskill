@@ -94,9 +94,11 @@ a.search-icon{
     border-radius: 0.8rem;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.07);
     .uploaded{
+        height: 100%;
+        width: 100%;
         img{
-            width: 100%;
             height: 100%;
+            width: 100%;
             object-fit: cover;
         }
         .mask{
@@ -125,7 +127,7 @@ a.search-icon{
                 position: absolute;
                 top: 1.7rem;
                 right: 2rem;
-                font-size: 0.9rem;
+                font-size: 1rem;
                 font-weight: bold;
                 font-style: normal;
                 font-stretch: normal;
@@ -133,8 +135,8 @@ a.search-icon{
                 letter-spacing: normal;
                 text-align: center;
                 color: #ffffff;
-                width: 6.29rem;
-                height: 1.94rem;
+                width: 7.2rem;
+                height: 2.2rem;
                 border-radius: 0.17rem;
             }
             .logos{
@@ -144,7 +146,7 @@ a.search-icon{
                 display: flex;
                 img{
                     width: 2.5rem;
-                    height: 2.5rem;
+                    //height: 2.5rem;
                     margin-right: 0.7rem;
                 }
             }

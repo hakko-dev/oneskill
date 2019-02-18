@@ -1,0 +1,166 @@
+@import '../styles/mixin';
+@import '../styles/header.scss';
+@import '../styles/newskill-indicator.scss';
+@import '../styles/newskill.scss';
+
+.layout{
+    display: flex;
+    justify-content: center;
+    @include xs{
+        flex-direction: column;
+    }
+    >.area{
+        border-radius: 1rem;
+        box-shadow: -2px 11px 35px -3px rgba(90, 142, 137, 0.13);
+        background-color: #ffffff;
+        &.receipt{
+            width: 86.8rem;
+            @include xs{
+                width: 100%;
+            }
+        }
+        &.proceed{
+            width: 37.9rem;
+            margin-left: 3.2rem;
+            height: 100%;
+            @include xs{
+                width: 100%;
+                margin-left: 0;
+                margin-top: 3rem;
+            }
+        }
+        .title{
+            font-size: 2.3rem;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #31a79b;
+        }
+        padding: 4.5rem 3rem 6rem;
+        tr.border, td.border{
+            border: 0 !important;
+            border-bottom: 1px solid #e7e8ec !important;
+        }
+        table{
+            margin-top: 5.5rem;
+        }
+        td.bold{
+            font-size: 1.8rem;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #1f2229;
+        }
+        td.light{
+            font-size: 1.8rem;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #1f2229;
+        }
+        td{
+            padding: 1.7rem 0;
+            img{
+                width: 2rem;
+                height: 2rem;
+                margin-right: 1.4rem;
+            }
+        }
+        td.gray{
+            font-size: 1.8rem;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #9da8bb;
+        }
+        td.padding-top{
+            padding-top: 4.3rem;
+        }
+        td.price{
+            font-size: 2.5rem;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: right;
+            color: #4786ff;
+        }
+        thead > tr > th{
+            font-size: 1.8rem;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #9da8bb;
+          
+            &:nth-child(1){
+                width: 30.6rem;
+            }
+            &:nth-child(2){
+                width: 15.9rem;
+            }
+            &:nth-child(3){
+                width: 15.1rem;
+            }
+            &:nth-child(4){
+                width: 19.2rem;
+            }
+        }
+        .card-list{
+            margin-top: 5.5rem;
+            .card-item{
+                margin-bottom: 2.4rem;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                display: flex;
+                align-items: center;
+                >img.logo{
+                    flex-shrink: 0;
+                    flex-grow: 0;
+                    width: 6.6rem;
+                    height: 4.6rem;
+                }
+                .text{
+                    flex-grow: 1;
+                    margin-left: 2.4rem;
+                    >.top{
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: 0px;
+                        color: #1f2229;
+                    }
+                    >.bottom{
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 2.21;
+                        letter-spacing: normal;
+                        color: #cacaca;
+                      
+                    }
+                }
+                >img.arrow{
+                    flex-shrink: 0;
+                    flex-grow: 0;
+                    width: 0.8rem;
+                    height: 1.4rem;
+                }
+            }
+        }
+    }
+}

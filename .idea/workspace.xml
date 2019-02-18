@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d20242be-38f5-4177-bc9d-5e3c2577ba81" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/pages/myskills-setup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/myskills-setup.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/myskills-upgrade-checkout.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/myskills-upgrade-checkout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/myskills-newskill-checkout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/myskills-newskill-checkout.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/myskills-plan-upgrade.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/myskills-plan-upgrade.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/myskills-plan-upgrade.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/myskills-plan-upgrade.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/myskills-platform-add.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/myskills-platform-add.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/myskills-platform-add.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/myskills-platform-add.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/myskills.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/myskills.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/myskills.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/myskills.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,101 +34,56 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="json" value="1" />
-          <entry key="pug" value="17" />
-          <entry key="scss" value="16" />
+          <entry key="pug" value="24" />
+          <entry key="scss" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="1" />
-          <entry key="Jade" value="17" />
-          <entry key="SCSS" value="16" />
+          <entry key="Jade" value="24" />
+          <entry key="SCSS" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="pug" value="2133" />
-          <entry key="scss" value="3428" />
+          <entry key="pug" value="2354" />
+          <entry key="scss" value="3521" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Jade" value="2133" />
-          <entry key="SCSS" value="3428" />
+          <entry key="Jade" value="2354" />
+          <entry key="SCSS" value="3521" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/top-world.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/top-world.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="720" column="23" selection-start-line="720" selection-start-column="23" selection-end-line="720" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/myskills-setup.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="112" column="16" selection-start-line="112" selection-start-column="16" selection-end-line="112" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pages/myskills-setup.scss">
+        <entry file="file://$PROJECT_DIR$/src/pages/myskills-platform-add.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="364" column="17" selection-start-line="364" selection-start-column="17" selection-end-line="364" selection-end-column="17" />
+            <state relative-caret-position="418">
+              <caret line="68" column="66" selection-start-line="68" selection-start-column="66" selection-end-line="68" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/global.scss">
+        <entry file="file://$PROJECT_DIR$/src/pages/myskills-platform-add.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+            <state relative-caret-position="317">
+              <caret line="70" column="31" lean-forward="true" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/layout.pug">
+        <entry file="file://$PROJECT_DIR$/index.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="27" column="26" selection-start-line="24" selection-start-column="19" selection-end-line="27" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/myskills-board.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-906">
-              <caret line="86" column="52" selection-start-line="86" selection-start-column="52" selection-end-line="86" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/myskills-board.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1748">
-              <caret line="484" column="39" selection-start-line="484" selection-start-column="39" selection-end-line="484" selection-end-column="39" />
+            <state relative-caret-position="615">
+              <caret line="41" column="64" selection-start-line="41" selection-start-column="64" selection-end-line="41" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -127,10 +92,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>profile</find>
-      <find>skillname</find>
       <find>detail</find>
-      <find>uploaded</find>
       <find>left</find>
       <find>media-</find>
       <find>left-side</find>
@@ -150,13 +112,16 @@
       <find>top</find>
       <find>new</find>
       <find>p</find>
-      <find>title</find>
-      <find>img</find>
       <find>stage-title</find>
       <find>skill welcom</find>
       <find>media-body</find>
       <find>popover</find>
       <find>item-card</find>
+      <find>type</find>
+      <find>uploaded</find>
+      <find>img</find>
+      <find>title</find>
+      <find>logo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -168,7 +133,6 @@
         <option value="$PROJECT_DIR$/src/pages/myaccount.pug" />
         <option value="$PROJECT_DIR$/src/pages/myaccount.scss" />
         <option value="$PROJECT_DIR$/src/styles/newskill.scss" />
-        <option value="$PROJECT_DIR$/index.pug" />
         <option value="$PROJECT_DIR$/src/pages/top-world.pug" />
         <option value="$PROJECT_DIR$/src/pages/layout.pug" />
         <option value="$PROJECT_DIR$/src/pages/myskills-setup.pug" />
@@ -177,6 +141,16 @@
         <option value="$PROJECT_DIR$/src/pages/myskills-board.pug" />
         <option value="$PROJECT_DIR$/src/pages/myskills-board.scss" />
         <option value="$PROJECT_DIR$/src/pages/myskills-setup.scss" />
+        <option value="$PROJECT_DIR$/src/pages/myskills-newskill-checkout.pug" />
+        <option value="$PROJECT_DIR$/src/pages/myskills-[skill]-upgrade.pug" />
+        <option value="$PROJECT_DIR$/src/pages/myskills-upgrade-checkout.pug" />
+        <option value="$PROJECT_DIR$/src/pages/myskills.scss" />
+        <option value="$PROJECT_DIR$/src/pages/myskills.pug" />
+        <option value="$PROJECT_DIR$/src/pages/myskills-plan-upgrade.scss" />
+        <option value="$PROJECT_DIR$/src/pages/myskills-plan-upgrade.pug" />
+        <option value="$PROJECT_DIR$/src/pages/myskills-platform-add.pug" />
+        <option value="$PROJECT_DIR$/src/pages/myskills-platform-add.scss" />
+        <option value="$PROJECT_DIR$/index.pug" />
       </list>
     </option>
   </component>
@@ -292,12 +266,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550376044914</updated>
-      <workItem from="1550376047397" duration="21742000" />
+      <workItem from="1550376047397" duration="24198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21742000" />
+    <option name="totallyTimeSpent" value="24198000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -313,14 +287,14 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25358167" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25358167" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3299363" />
+      <window_info anchor="bottom" id="Terminal" weight="0.3299363" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -338,19 +312,11 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pages/myskills.pug">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/_mixin.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
           <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/myskills-newskill-checkout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/myskills-newskill-name-info.scss">
@@ -408,13 +374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/myskills-newskill-checkout.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="19" column="58" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/myskills-newskill-upload.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -429,13 +388,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/layout.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -443,24 +395,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/top-world.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/global.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
           <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/top-world.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="720" column="23" selection-start-line="720" selection-start-column="23" selection-end-line="720" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -478,6 +416,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/myskills-setup.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="364" column="17" selection-start-line="364" selection-start-column="17" selection-end-line="364" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/myskills-setup.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -485,10 +430,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/myskills-setup.scss">
+    <entry file="file://$PROJECT_DIR$/src/pages/top-world.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="364" column="17" selection-start-line="364" selection-start-column="17" selection-end-line="364" selection-end-column="17" />
+        <state relative-caret-position="109">
+          <caret line="720" column="23" selection-start-line="720" selection-start-column="23" selection-end-line="720" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/top-world.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/myskills-newskill-checkout.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/myskills-newskill-checkout.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="105" column="65" selection-start-line="105" selection-start-column="65" selection-end-line="105" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/myskills-upgrade-checkout.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/myskills-upgrade-checkout.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/myskills.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1212">
+          <caret line="149" column="37" lean-forward="true" selection-start-line="149" selection-start-column="37" selection-end-line="149" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/myskills-plan-upgrade.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="30" column="28" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/myskills-plan-upgrade.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/myskills.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="64" selection-start-line="41" selection-start-column="64" selection-end-line="41" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/myskills-platform-add.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="70" column="31" lean-forward="true" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/myskills-platform-add.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="68" column="66" selection-start-line="68" selection-start-column="66" selection-end-line="68" selection-end-column="66" />
         </state>
       </provider>
     </entry>
