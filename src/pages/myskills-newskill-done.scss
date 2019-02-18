@@ -11,6 +11,10 @@
     background-color: #ffffff;
     padding: 9.1rem 7.2rem;
     margin: 0 auto 0;
+    @include xs{
+        padding: 3rem 2rem;
+        width: 100%;
+    }
     img{
         width: 10rem;
         height: 8.5rem;

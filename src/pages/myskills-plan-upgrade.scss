@@ -11,7 +11,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include xs{
+        flex-direction: column;
+    }
     .plan{
+        @include xs{
+            margin-bottom: 4rem;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
         &.selected{
             outline: 1.4px solid #31a79b;
             .selected-badge{
@@ -105,7 +114,7 @@
         }
         &.basic{
             width: 34.08rem;
-            height: 44.59rem;    
+            height: 46.59rem;    
             z-index: 4;
             padding: 3.5rem 3.7rem 0;
         }
@@ -115,6 +124,10 @@
             height: 55.79rem;
             box-shadow: 0 6px 35px 0 rgba(0, 0, 0, 0.2);
             padding: 4.5rem 4.4rem;
+            @include xs{
+                z-index: 5;
+                width: 34.08rem;
+            }
         }
         .title{
             font-size: 2rem;

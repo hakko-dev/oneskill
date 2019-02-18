@@ -27,5 +27,11 @@ html(lang="en")
                     //     radioClass: 'iradio_flat-green'
                     // });
                     $('[data-toggle="popover"]').popover()
+                    $('.close-mobile-menu').click(function(){
+                        $('body').removeClass('open-menu')
+                    })
+                    $('.btn.hbg-icon').click(function(){
+                        $('body').addClass('open-menu')
+                    })
                 })
                  

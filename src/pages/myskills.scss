@@ -26,6 +26,9 @@
     &::placeholder{
         color: #cacaca;
     }
+    @include xs{
+        width: 100%;
+    }
 }
 a.search-icon{
     padding:0;
@@ -49,6 +52,9 @@ a.search-icon{
         margin-right: 4.5rem;
         &:first-child{
             margin-left:0;
+        }
+        @include xs{
+            margin: 2.25rem !important;
         }
         ul{
             list-style: none;

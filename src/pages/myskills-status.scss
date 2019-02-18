@@ -2,10 +2,20 @@
 @import '../styles/header.scss';
 @import '../styles/newskill.scss';
 
+.mobile-scroll-area{
+    @include xs{
+        width: 100%;
+        overflow-x: scroll;
+        height: 60rem;
+    }
+}
 .status-area{
     display: flex;
     align-items: center;
     justify-content: center;
+    @include xs{
+        width: 131rem;
+    }
     button{
         font-size: 1.5rem;
         font-weight: bold;
