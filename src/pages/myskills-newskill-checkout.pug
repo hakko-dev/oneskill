@@ -46,27 +46,35 @@ block content
                 table.fixed
                     thead
                         tr
-                            th.text-left TASK DESCRIPTION
+                            th.text-left.size-invisible.xs TASK DESCRIPTION
                             th.text-left SUBSCRIPTION
                             th.text-right RATE
                             th.text-right RATE
                     tbody
-                        tr.border
-                            td.bold.padding-top
+                        tr.size-visible.xs.table-row
+                            td(colspan=3).bold 
                                 img(src='/src/assets/img/alexa-logo.svg')
                                 | Skill for Amazon Alexa
-                            td.padding-top
-                            td.padding-top.text-right.light 89.99 USD
-                            td.padding-top.text-right.bold 900,00 USD
                         tr.border
-                            td.bold 
+                            td.bold.size-invisible.xs
+                                img(src='/src/assets/img/alexa-logo.svg')
+                                | Skill for Amazon Alexa
+                            td
+                            td.text-right.light 89.99 USD
+                            td.text-right.bold 900,00 USD
+                        tr.size-visible.xs.table-row
+                            td(colspan=3).bold 
+                                img(src='/src/assets/img/asset-2-copy-1.svg')
+                                | Basic Plan - 1 Year
+                        tr.border
+                            td.bold.size-invisible.xs
                                 img(src='/src/assets/img/asset-2-copy-1.svg')
                                 | Basic Plan - 1 Year
                             td.light 12 Months
                             td.text-right.light 19 USD
                             td.text-right.bold 240,00 USD
                         tr
-                            td.padding-top(rowspan=3)
+                            td.padding-top(rowspan=3).size-invisible.xs
                             td.padding-top.border.gray SUBTOTAL
                             td.padding-top.border.text-right.bold(colspan=2) 1140,00 USD
                         tr.border
