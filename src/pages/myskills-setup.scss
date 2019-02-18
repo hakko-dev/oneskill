@@ -360,3 +360,7 @@ button.apply{
     box-shadow: -2px 1.8px 2px 0 rgba(47, 83, 151, 0.08);
     left: -9px;
 }
+
+.situation-item.music .item-card::before{
+    display: none;
+}
