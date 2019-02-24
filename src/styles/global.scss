@@ -13,24 +13,40 @@ html {
   html {
     font-size: 6px;
   }
+  body{
+    font-size: 8px;
+  }
+
 }
 @include sm {
   html {
     font-size: 6px;
+  }
+  body{
+    font-size: 8px;
   }
 }
 @include md {
   html {
     font-size: 7px;
   }
+  body{
+    font-size: 8px;
+  }
 }
 @include lg {
   html {
     font-size: 8px;
   }
+  body{
+    font-size: 8px;
+  }
 }
 @include xl {
   html {
+    font-size: 8px;
+  }
+  body{
     font-size: 8px;
   }
 }
@@ -85,7 +101,29 @@ button.type {
     background-color: #9da8bb;
   }
   &.premium {
-    background-color: #ffb34b;
+    background-color: #9a5299;
   }
 }
 
+.media-body{
+  background-color: #F7F7F7 !important;
+  &::before{
+    background-color: #F7F7F7 !important;
+  }
+}
+
+.popover-body{
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: #31a79b;
+  padding: 1.5rem 1.75rem;
+  border: none;
+  color: white
+}
+.bs-popover-auto[x-placement^=right]>.arrow::after, .bs-popover-right>.arrow::after{
+  border-right-color: #31a79b;
+
+}
+.bs-popover-auto[x-placement^=left]>.arrow::after, .bs-popover-left>.arrow::after{
+  border-left-color: #31a79b;
+}

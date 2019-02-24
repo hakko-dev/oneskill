@@ -5,21 +5,21 @@
     position: fixed;
     justify-content: space-between;
     top:0;
-    height: 11.2rem;
+    height: 11.2em;
     width: 100%;
     align-items: center;
     box-shadow: -2px 11px 35px -3px rgba(108, 122, 121, 0.04);
     background-color: #ffffff;
-    padding: 0 8rem;
+    padding: 0 8em;
     z-index: 999;
     .hbg-icon{
         display: none;
         position: absolute;
-        left: 3rem;
+        left: 3em;
         top: 50%;
-        margin-top: -1.5rem;
+        margin-top: -1.5em;
         img{
-            width: 3rem;
+            width: 3em;
         }
     }
     @include xs{
@@ -30,17 +30,17 @@
     }
     .profile{
         img{
-            width: 5.5rem;
-            height: 5.5rem;
+            width: 5.5em;
+            height: 5.5em;
             background: grey;
             border-radius: 50%;
             box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.22);
         }
         @include xs{
             position: absolute;
-            right: 3rem;
+            right: 3em;
             top: 50%;
-            margin-top: -2.75rem;
+            margin-top: -2.75em;
         }
     }
     .left-header-items{
@@ -53,22 +53,22 @@
             @include xs{
                 position: absolute;
                 top: 50%;
-                margin-top: -1.85rem;
+                margin-top: -1.85em;
             }
             img{
-                height: 2.7rem;
+                height: 2.7em;
                 @include xs{
-                    height: 3.7rem;
+                    height: 3.7em;
                 }
             }
         }
         .menus{
-            margin-left: 6.68rem;
+            margin-left: 6.68em;
             display: flex;
             align-items: center;
             @include xs{
                 margin-left: 0;
-                margin-top: 2rem;
+                margin-top: 2em;
                 display: none;
             }
             ul{
@@ -77,20 +77,23 @@
                 list-style: none;
                 display: flex;
                 li{
-                    margin-right: 4.8rem;
+                    margin-right: 4.8em;
                     &:last-child{
                         margin-right: 0;
                     }
                 }
             }
             ul > li > a{
-                font-size: 2rem;
+                font-size: 2em;
                 font-weight: 600;
                 font-style: normal;
                 font-stretch: normal;
                 line-height: normal;
                 letter-spacing: -0.5px;
                 color: #404040;
+                &:hover{
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -114,10 +117,10 @@
             padding:0;
             margin:0;
             li{
-                font-size: 5rem;
+                font-size: 5em;
                 text-align: center;
                 font-weight: 400;
-                margin-bottom: 2rem;
+                margin-bottom: 2em;
                 &:last-child{
                     margin-bottom:0;
                 }

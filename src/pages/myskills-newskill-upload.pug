@@ -5,8 +5,8 @@ block links
 
 block content
     #newskill-indicator
-        button.btn.title
-            | Add new skill or action
+        .new-title
+            | ► Add new skill or action
         .indicator-area
             .indicator.done
                 button.btn
@@ -109,7 +109,8 @@ block content
                                     | Use Skill name title banner
 
         .next-button
-            button.btn NEXT
+            a(href="/src/pages/myskills-newskill-plan.pug")
+                button.btn NEXT
     #select-image-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
         .modal-dialog.modal-xl.modal-dialog-centered.modal-dialog-scrollable(role='document')
             .modal-content

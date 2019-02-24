@@ -1,7 +1,12 @@
 @import '../styles/mixin';
 @import '../styles/header.scss';
 @import '../styles/newskill.scss';
-
+html{
+    font-size: 10px;
+}
+#content{
+    padding-top: 11.2em;
+}
 #stage-container{
     padding:0;
     >.left#left-sidebar{
@@ -11,7 +16,7 @@
             display: none;
         }
         >.inner-wrapper-sticky{
-            padding: 0rem 4.2rem;
+            padding: 0rem 3.2rem;
         }
         .title{
             text-transform: uppercase;
@@ -130,7 +135,7 @@
         margin-left: 0;
     }
     >.center{
-        padding: 3rem 8.4rem 3rem 4rem;
+        padding: 4.5rem 8.4rem 3rem 4rem;
         @include xs{
             padding: 3rem 4rem 3rem 4rem;
         }
@@ -400,4 +405,11 @@ button.apply{
 }
 .situation-item.music .item-card::before{
     display: none;
+}
+
+#stage-title .left .text .top{
+    font-size: 2.8rem;
+}
+.layout-area > .center .situation-item{
+    margin-bottom: 4rem;
 }

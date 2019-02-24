@@ -5,12 +5,14 @@
 
 .plans-wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 20rem;
     align-items: center;
     @include xs{
         flex-direction: column;
     }
     .plan{
+
         @include xs{
             margin-bottom: 6rem;
             &:last-child{
@@ -22,6 +24,7 @@
             .selected-badge{
                 display: block;
             }
+            background-color: #31a79b10;
         }
         .selected-badge{
             img{
@@ -56,10 +59,11 @@
             display: block;
             margin: auto;
             margin-bottom: 1.46rem;
-            width: 12.29rem;
-            height: 2.34rem;
+
+            //width: 12.29rem;
+            //height: 2.34rem;
             border-radius: 0.17rem;
-            background-color: #ffb34b;
+            background-color: #9a5299;
             font-size: 1rem;
             font-weight: bold;
             font-style: normal;
@@ -71,16 +75,19 @@
             text-transform: uppercase;
         }
         &.economy, &.basic{
-            width: 34.08rem;
-            height: 44.59rem;    
+            //width: 34.08rem;
+            //height: 44.59rem;
+            width: 35.68rem;
+            height: 55rem;
             z-index: 4;
             padding: 5rem 3.7rem;
+
         }
         &.premium{
             z-index: 5;
             width: 35.68rem;
-            height: 55.79rem;
-            box-shadow: 0 6px 35px 0 rgba(0, 0, 0, 0.2);
+            height: 55rem;
+            //box-shadow: 0 6px 35px 0 rgba(0, 0, 0, 0.2);
             padding: 4.5rem 4.4rem;
             @include xs{
                 z-index: initial;
