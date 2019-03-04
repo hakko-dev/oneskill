@@ -60,7 +60,7 @@ block content
                                     | 0
                                 .text-count
                                     | /200
-                            .text
+                            .text#erase-powered-container
                                 input#erase-powered(type="checkbox")
                                 label.ml-2(for="erase-powered") 
                                     | Erase “powered by Oneskill”
@@ -90,9 +90,9 @@ block content
                                     | /200
                             .text#come
                                 | Come check out Oneskill and make your own Alexa Skill in one minute!
-                            .text
+                            .text#erase-come-container
                                 input#erase(type="checkbox")
-                                label.ml-2(for="erase") 
+                                label#erase-text.ml-2(for="erase")
                                     | Erase “Come check out Oneskill and make your own Alexa Skill in one minute!”
                             .action-row
                                 button.btn.gray.cancel-btn Cancel
@@ -129,7 +129,7 @@ block content
                                     option(value='AL') Chopin E flat minor
                                     option(value='WY') Chopin F flat minor
 
-                            img.mx-5(src='/src/assets/img/Play.svg')
+                            img.ml-4(src='/src/assets/img/Play.svg')
                             button.btn.apply.ml-4 Apply
 block append scripts        
     script(src='/src/assets/lib/jquery.sticky-sidebar.min.js')

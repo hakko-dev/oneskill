@@ -15,6 +15,9 @@ html{
         @include xs{
             display: none;
         }
+        @include sm{
+            display: none;
+        }
         >.inner-wrapper-sticky{
             padding: 0rem 3.2rem;
         }
@@ -134,10 +137,17 @@ html{
     @include xs{
         margin-left: 0;
     }
+    @include sm{
+        margin-left: 0;
+    }
     >.center{
         padding: 4.5rem 8.4rem 3rem 4rem;
         @include xs{
-            padding: 3rem 4rem 3rem 4rem;
+            padding: 3rem 2rem 3rem 2rem;
+        }
+        @include sm{
+            padding: 0rem 2rem 3rem 2rem;
+
         }
         flex-grow: 1;
         border-left: 1px solid #e6eaee;
@@ -157,6 +167,14 @@ html{
                 margin-right: 4.49rem;
                 flex-grow: 0;
                 flex-shrink: 0;
+                @include xs{
+                    margin-right: 3rem;
+                }
+                @include sm{
+                    width: 15rem;
+                    height: 15rem;
+                    margin-right: 2.5rem;
+                }
             }
             &.music{
                 .title{
@@ -249,6 +267,12 @@ html{
                 .text{
                     display: flex;
                     align-items: center;
+                    @include xs{
+                        align-items: flex-end;
+                    }
+                    @include sm{
+                        align-items: flex-end;
+                    }
                     font-size: 1.4rem;
                     font-weight: 500;
                     font-style: normal;
@@ -334,7 +358,7 @@ html{
     text-transform: uppercase;
 }
 .song-search{
-    width:  32.7rem;    
+    width:  20rem;
     height: 3.6rem;
 }
 .category-search{
@@ -412,4 +436,52 @@ button.apply{
 }
 .layout-area > .center .situation-item{
     margin-bottom: 4rem;
+}
+
+#erase-powered-container{
+    @include xs{
+        align-items: center;
+    }
+    @include sm{
+        align-items: center;
+
+    }
+}
+
+#come{
+    @include xs{
+        line-height: 1.8;
+    }
+    @include sm{
+        line-height: 1.5;
+    }
+}
+
+#erase-come-container{
+    @include xs{
+        align-items: flex-start;
+        margin-top: 1rem;
+    }
+    @include sm{
+        align-items: flex-start;
+        margin-top: 1rem;
+    }
+}
+
+#erase-text{
+    @include xs{
+        line-height: 1.8;
+    }
+    @include sm{
+        line-height: 1.5;
+    }
+
+}
+#erase{
+    @include xs{
+        margin-top: 0.5rem;
+    }
+    @include sm{
+        margin-top: 0.5rem;
+    }
 }
