@@ -11,12 +11,12 @@ html{
     padding:0;
     >.left#left-sidebar{
         float:left;
-        width: 34.1rem;
+        width: 30rem;
         @include xs{
             display: none;
         }
         >.inner-wrapper-sticky{
-            padding: 0rem 4.2rem;
+            padding: 0rem 4rem;
         }
         .title{
             text-transform: uppercase;
@@ -89,9 +89,9 @@ html{
     }
     >.right{
         float:right;
-        width: 30.4rem;
+        width: 25rem;
         >.inner-wrapper-sticky{
-            padding: 3rem 2.4rem;
+            padding: 1rem 1.2rem;
         }
         button.upgrade{
             margin-top: 0.6rem;
@@ -210,11 +210,11 @@ html{
 }
 #stage-title{
     position: fixed;
-    left: 34.2rem;
+    left: 30rem;
     padding-left: 3rem;
     top: 11.2rem;
     padding-top: 3rem;
-    right: 30.6rem;
+    right: 25rem;
     padding-bottom: 1rem;
     background: white;
     z-index: 999;
@@ -229,8 +229,8 @@ html{
     color: #9fa9ba;
 }
 .layout-area{
-    margin-left: 34.1rem;
-    margin-right: 30.4rem;
+    margin-left: 30rem;
+    margin-right: 25rem;
     @include xs{
         margin-left: 0;
     }

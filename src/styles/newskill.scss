@@ -3,7 +3,10 @@
 #stage-container{
     padding: 4.9rem 8.1rem;
     @include xs{
-        padding: 4.9rem 1.5rem;
+        padding: 7rem 1.8rem;
+    }
+    @include sm{
+        padding: 3rem 5rem;
     }
     //background-color: #31a79b10;
 }
@@ -13,6 +16,7 @@
     margin-bottom: 5rem;
     @include xs{
         flex-direction: column;
+        margin-bottom: 3rem;
     }
     .left{
         display: flex;

@@ -11,6 +11,9 @@
     @include xs{
         flex-direction: column;
     }
+    @include sm{
+        padding: 0 3rem;
+    }
     .plan{
 
         @include xs{
@@ -147,6 +150,9 @@
             letter-spacing: -0.3px;
             color: #5b6b82;
             margin-left: -2rem;
+            @include sm{
+                padding-left: 5rem;
+            }
             li{
                 margin-bottom: 1.4rem;
                 position: relative;

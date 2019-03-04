@@ -2,20 +2,21 @@
 @import '../styles/header.scss';
 @import '../styles/newskill.scss';
 
-.mobile-scroll-area{
-    @include xs{
-        width: 100%;
-        overflow-x: scroll;
-        height: 60rem;
-    }
-}
+//.mobile-scroll-area{
+//    @include xs{
+//        width: 100%;
+//        overflow-x: scroll;
+//        height: 60rem;
+//    }
+//}
 .status-area{
     display: flex;
     align-items: center;
     justify-content: center;
 
     @include xs{
-        width: 131rem;
+        //width: 131rem;
+        flex-direction: column;
     }
     button{
         font-size: 1.5rem;
@@ -32,6 +33,7 @@
         color: #5b6b82;
         text-transform: uppercase;
         position: relative;
+
         &.active{
             background-color: #5abeb622;
             color: #31a79b;
@@ -47,6 +49,7 @@
             border-radius: 0.4rem;
             box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.1);
             background-color: #ffffff;
+
             &.active{
                 //bottom: -42.69rem;
                 width: 25rem;
@@ -120,6 +123,9 @@
         border-top: 2px solid  #e7e7e7;
         &.active{
             border-top: 2px solid  #31a79b;
+        }
+        @include xs{
+            display: none;
         }
     }
     

@@ -11,6 +11,11 @@
     @include xs{
         display: none;
     }
+    @include sm{
+        padding: 0 5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
     >button.title{
         width: 30.4rem;
         height: 4.7rem;
