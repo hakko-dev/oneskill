@@ -81,6 +81,10 @@
                     height: 5rem;
                 }
             }
+            margin-bottom: 1rem;
+            @include xs{
+                margin-bottom: 0;
+            }
         }
         .title{
             margin: 0 -3rem 0;
@@ -126,6 +130,9 @@
             }
             @include xs{
                 font-size: 1.8rem;
+            }
+            @include md{
+                padding-left: 3rem;
             }
             li{
                 margin-bottom: 1rem;

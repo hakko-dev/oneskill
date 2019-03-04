@@ -157,6 +157,11 @@
                 }
             }
         }
+        .close-mobile-menu{
+            position: absolute;
+            top: 5em;
+            right: 5em;
+        }
     }
     body.open-menu{
         #mobile-menu{

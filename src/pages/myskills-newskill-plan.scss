@@ -5,8 +5,8 @@
 
 .plans-wrapper{
     display: flex;
-    justify-content: space-between;
-    padding: 0 20rem;
+    justify-content: center;
+    padding: 0 0rem;
     align-items: center;
     @include xs{
         flex-direction: column;
@@ -15,11 +15,18 @@
         padding: 0 3rem;
     }
     .plan{
-
+        margin-right: 3rem;
+        &:last-child{
+            margin-right: 0;
+        }
         @include xs{
+            margin-right: 0rem;
             margin-bottom: 6rem;
             &:last-child{
                 margin-bottom: 0;
+            }
+            ul{
+                padding-left: 3rem;
             }
         }
         &.selected{
@@ -84,6 +91,18 @@
             height: 55rem;
             z-index: 4;
             padding: 5rem 3.7rem;
+            @include md{
+                padding: 5rem 1.4rem;
+                ul{
+                    padding-left: 5rem;
+                }
+            }
+            @include sm{
+                padding: 5rem 0rem;
+                ul{
+                    padding-left: 5rem;
+                }
+            }
 
         }
         &.premium{
@@ -94,7 +113,12 @@
             padding: 4.5rem 4.4rem;
             @include xs{
                 z-index: initial;
-                width: 34.08rem;
+            }
+            @include md{
+                padding: 4.5rem 1.4rem;
+            }
+            @include sm{
+                padding: 4.5rem 0rem;
             }
         }
         .title{
@@ -150,9 +174,9 @@
             letter-spacing: -0.3px;
             color: #5b6b82;
             margin-left: -2rem;
-            @include sm{
-                padding-left: 5rem;
-            }
+            // @include sm{
+            //     padding-left: 5rem;
+            // }
             li{
                 margin-bottom: 1.4rem;
                 position: relative;

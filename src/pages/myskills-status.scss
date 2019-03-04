@@ -33,7 +33,9 @@
         color: #5b6b82;
         text-transform: uppercase;
         position: relative;
-
+        @include md{
+            font-size: 1.3rem;
+        }
         &.active{
             background-color: #5abeb622;
             color: #31a79b;
@@ -49,7 +51,7 @@
             border-radius: 0.4rem;
             box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.1);
             background-color: #ffffff;
-
+            padding: 0 2rem;
             &.active{
                 //bottom: -42.69rem;
                 width: 25rem;
@@ -60,6 +62,18 @@
                 .status-label{
                     display: flex;
                 }
+            }
+            @include lg{
+                width: 22rem !important;
+                margin-left: -11rem;
+                padding: 0 1rem;
+            }
+            @include md{
+                width: 19rem !important;
+                margin-left: -9.5rem;
+                padding: 0 1rem;
+                bottom: -35.89rem !important;
+                height: 30.49rem !important;
             }
             .status-label{
                 text-transform: uppercase;
@@ -113,7 +127,6 @@
                 text-align: center;
                 color: #5b6b82;
             }
-            padding: 0 2rem;
         }
     }
     .hori-border{
@@ -126,6 +139,9 @@
         }
         @include xs{
             display: none;
+        }
+        @include xl{
+            width: 11.6rem;
         }
     }
     

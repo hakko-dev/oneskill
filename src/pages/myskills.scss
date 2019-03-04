@@ -48,7 +48,17 @@ a.search-icon{
 .skills-area{
     display: flex;
     flex-wrap: wrap;
+    @include xs{
+        flex-direction: column;
+        align-items: center;
+    }
+    
     .skill{
+        display: flex;
+        flex-direction: column;
+        @include xs{
+            flex-direction: row;
+        }
         margin-right: 4.5rem;
         &:first-child{
             margin-left:0;

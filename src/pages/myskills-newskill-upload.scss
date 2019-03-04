@@ -208,8 +208,10 @@
     }
 }
 .modal-body{
-    padding: 0 9.7rem;
-    padding-top: 5.1rem;
+    padding: 5.1rem 9.7rem;
+    @include xs{
+        padding: 1.1rem 3.7rem;
+    }
     .image-area{
         display: flex;
         flex-wrap: wrap;

@@ -45,6 +45,9 @@
         }
         table{
             margin-top: 5.5rem;
+            @include xs{
+                width: 100%;
+            }
         }
         td.bold{
             font-size: 1.8rem;
@@ -130,6 +133,14 @@
                     flex-grow: 0;
                     width: 6.6rem;
                     height: 4.6rem;
+                    @include md{
+                        width: 4rem;
+                        height: initial;
+                    }
+                    @include sm{
+                        width: 5.1rem;
+                        height: initial;
+                    }
                 }
                 .text{
                     flex-grow: 1;

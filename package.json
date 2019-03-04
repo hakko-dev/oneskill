@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "prestart": "rm -rf .cache",
-    "start": "parcel index.pug"
+    "start": "parcel index.pug",
+    "prebuild":"rm -rf dist",
+    "build": "parcel build --no-minify index.pug"
   },
   "author": "",
   "license": "ISC",
