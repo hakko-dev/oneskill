@@ -10,7 +10,7 @@ block content
                 .text
                     .top Skill/Action application request status
 
-        .status-area
+        .status-area.size-invisible.xs
             button.btn.active
                 | 1. Received
                 .bottom-card
@@ -55,6 +55,48 @@ block content
                     .title Skill on air
                     .desc
                         | Your board has connected and now ready to be on air. Your fee charges from this date.
+        
+        .status-area.size-visible.xs
+            button.btn.active
+                | 1. Received
+            .bottom-card
+                .status-label Your status
+                img(src='/src/assets/img/st-1.svg')
+                .title Skill info Received
+                .desc
+                    | Your skill name and infomation are received and saved.
+            button.btn.active
+                | 2. Checked
+            .bottom-card
+                .status-label Your status
+                img(src='/src/assets/img/st-2.svg')
+                .title All information checked
+                .desc
+                    | Our internal team reviewed your skill and ready for application.
+            button.btn.active
+                | 3. Submitted
+            .bottom-card.active
+                .status-label Your status
+                img(src='/src/assets/img/st-3.svg')
+                .title Submitted to Amazon
+                .desc
+                    | Your skill has submitted to Amazon and awaiting for approval.
+            button.btn
+                | 4. Approved
+            .bottom-card
+                .status-label Your status
+                img(src='/src/assets/img/st-4.svg')
+                .title Skill approved
+                .desc
+                    | Congratulation! Your Skill has been approved and ready to use!
+            button.btn
+                | 5. On air
+            .bottom-card
+                .status-label Your status
+                img(src='/src/assets/img/st-5.svg')
+                .title Skill on air
+                .desc
+                    | Your board has connected and now ready to be on air. Your fee charges from this date.
 
 
 
