@@ -41,6 +41,20 @@
             }
             background-color: #31a79b10;
         }
+        &.disabled{
+            ul > li , .title, .price > *, .choose-btn{
+                color: #cacaca !important;
+            }
+            .choose-btn{
+                border: 1px solid #cacaca !important;
+            }
+            ul > li::before{
+                background-image: url('/src/assets/img/check-mark-button-disabled.svg');
+            }
+            ul > li.warning::before{
+                background-image: url('/src/assets/img/warning-icon-disabled.svg');
+            }
+        }
         .selected-badge{
             img{
                 width: 1.57rem;
