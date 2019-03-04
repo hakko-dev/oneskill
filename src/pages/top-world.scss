@@ -15,6 +15,9 @@ html{
         @include xs{
             display: none;
         }
+        @include sm{
+            display: none;
+        }
         >.inner-wrapper-sticky{
             padding: 0rem 4rem;
         }
@@ -88,6 +91,12 @@ html{
         }
     }
     >.right{
+        @include xs{
+            display: none;
+        }
+        @include sm{
+            display: none;
+        }
         float:right;
         width: 25rem;
         >.inner-wrapper-sticky{
@@ -233,12 +242,23 @@ html{
     margin-right: 25rem;
     @include xs{
         margin-left: 0;
+        margin-right: 0;
+    }
+    @include sm{
+        margin-left: 0;
+        margin-right: 0;
     }
     >.center{
         padding: 0rem 4rem 3rem;
         flex-grow: 1;
         border-left: 1px solid #e6eaee;
         border-right: 1px solid #e6eaee;
+        @include xs{
+            padding: 0rem 2rem 3rem;
+        }
+        @include sm{
+            padding: 0rem 2rem 3rem;
+        }
         .new-post-card{
             border-radius: 0.6rem;
             box-shadow: 0 2px 6px 0 rgba(47, 83, 151, 0.1), 0 0 20px 0 rgba(215, 222, 227, 0.23);
@@ -416,6 +436,12 @@ html{
                 color: rgba(24, 28, 47, 0.3);
                 padding-top: 4.2rem;
                 display: block;
+                @include xs{
+                    padding-top: 2rem;
+                }
+                @include sm{
+                    padding-top: 0.3rem;
+                }
             }
             .skillname{
                 width: 12.3rem;
@@ -513,7 +539,13 @@ html{
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
+                        @include xs{
+                            margin-top: -1rem;
+                        }
                         .left{
+                            @include xs{
+                                max-width: 50%;
+                            }
                             .title{
                                 font-size: 1.5rem;
                                 font-weight: 600;
