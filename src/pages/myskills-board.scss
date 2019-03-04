@@ -278,6 +278,7 @@ html{
         left: 0;
         z-index: 4;
         right: 0;
+        top: 9em;
         margin-bottom: 0;
         padding: 2rem 1rem 1rem;
     }
@@ -317,6 +318,9 @@ html{
         border-right: 1px solid #e6eaee;
         @include xs{
             padding: 10rem 2rem;
+        }
+        @include sm{
+            padding: 7rem 4rem 3rem;
         }
         .new-post-card{
             border-radius: 0.6rem;
@@ -772,7 +776,33 @@ html{
     @include xs{
         font-size: 2rem;
         //padding: 0 1rem;
+    }
+    @include sm{
+        font-size: 1.7rem;
+    }
+}
+#stage-title .left .text .bottom{
+    @include sm{
+        font-size: 1.3rem;
+        margin-top: -0.1rem;
+    }
+}
 
+button.type.premium{
+    @include sm{
+        padding: 0.3rem 0.5rem;
+    }
+}
+
+#premium-new-menu{
+    @include sm{
+        font-size: 1.2rem;
+    }
+}
+#stage-title .bottom img{
+    @include sm{
+        width: 1.2rem;
+        height: 1.2rem;
     }
 }
 

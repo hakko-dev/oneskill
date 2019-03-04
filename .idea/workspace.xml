@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d20242be-38f5-4177-bc9d-5e3c2577ba81" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/myskills-board.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/myskills-board.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/myskills-newskill-plan.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/myskills-newskill-plan.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/myskills-newskill-plan.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/myskills-newskill-plan.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/myskills-newskill.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/myskills-newskill.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/myskills-plan-upgrade.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/myskills-plan-upgrade.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/myskills-plan-upgrade.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/myskills-plan-upgrade.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/myskills-platform-add.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/myskills-platform-add.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/myskills-status.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/myskills-status.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/myskills-status.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/myskills-status.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/top-world.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/top-world.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/newskill-indicator.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/newskill-indicator.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/newskill.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/newskill.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,9 +18,10 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -57,13 +43,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="pug" value="2882" />
-          <entry key="scss" value="7366" />
+          <entry key="scss" value="7736" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Jade" value="2882" />
-          <entry key="SCSS" value="7366" />
+          <entry key="SCSS" value="7736" />
         </counts>
       </usages-collector>
     </session>
@@ -73,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/newskill.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
+            <state relative-caret-position="1050">
               <caret line="70" column="30" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="30" />
             </state>
           </provider>
@@ -82,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/myskills-board.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="281" column="32" selection-start-line="281" selection-start-column="32" selection-end-line="281" selection-end-column="32" />
+            <state relative-caret-position="132">
+              <caret line="280" column="14" selection-start-line="280" selection-start-column="14" selection-end-line="280" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -92,7 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>#ffb34b</find>
       <find>ffb34b</find>
       <find>detail-right</find>
       <find>no ads</find>
@@ -114,14 +99,15 @@
       <find>3.1rem</find>
       <find>top</find>
       <find>1.9rem</find>
-      <find>center</find>
       <find>.right</find>
       <find>title</find>
       <find>profile</find>
-      <find>stage-title</find>
       <find>xs</find>
       <find>none</find>
       <find>#stage-title</find>
+      <find>stage-title</find>
+      <find>center</find>
+      <find>bottom</find>
     </findStrings>
     <replaceStrings>
       <replace>em</replace>
@@ -202,7 +188,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,13 +205,6 @@
               <item name="Oneskill" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oneskill" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oneskill" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Oneskill" type="b2602c69:ProjectViewProjectNode" />
@@ -251,6 +229,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,11 +269,12 @@
       <updated>1550376044914</updated>
       <workItem from="1550376047397" duration="25889000" />
       <workItem from="1550914795915" duration="18849000" />
+      <workItem from="1551713222074" duration="994000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44738000" />
+    <option name="totallyTimeSpent" value="45732000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -309,7 +289,7 @@
     <frame x="19" y="23" width="1417" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25358167" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25358167" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -321,7 +301,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3299363" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3299363" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -604,15 +584,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/newskill.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
+        <state relative-caret-position="1050">
           <caret line="70" column="30" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/myskills-board.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="281" column="32" selection-start-line="281" selection-start-column="32" selection-end-line="281" selection-end-column="32" />
+        <state relative-caret-position="132">
+          <caret line="280" column="14" selection-start-line="280" selection-start-column="14" selection-end-line="280" selection-end-column="14" />
         </state>
       </provider>
     </entry>
