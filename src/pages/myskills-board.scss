@@ -258,7 +258,7 @@ html{
     }
 }
 #stage-title{
-    //position: fixed;
+    position: fixed;
     left: 30.2rem;
     padding-left: 3rem;
     top: 11.2em;
@@ -268,22 +268,27 @@ html{
     background: white;
     z-index: 999;
     margin-bottom: 0rem;
-    border-left: 1px solid #e6eaee;
-    border-right: 1px solid #e6eaee;
+
 
     @include xs{
+        position: initial;
         left: 0;
         z-index: 4;
         right: 0;
         margin-bottom: 0;
         padding: 9rem 1rem 1rem;
+        border-left: 1px solid #e6eaee;
+        border-right: 1px solid #e6eaee;
     }
     @include sm{
+        position: initial;
         left: 0;
         z-index: 4;
         right: 0;
         margin-bottom: 0;
         padding: 0rem 1rem 1rem;
+        border-left: 1px solid #e6eaee;
+        border-right: 1px solid #e6eaee;
 
     }
 }
