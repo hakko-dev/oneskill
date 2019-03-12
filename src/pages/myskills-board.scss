@@ -5,7 +5,7 @@ html{
   font-size: 10px;
 }
 #content{
-    padding-top: 11.2em;
+    //padding-top: 11.2em;
 }
 #stage-container{
     padding:0;
@@ -258,7 +258,7 @@ html{
     }
 }
 #stage-title{
-    position: fixed;
+    //position: fixed;
     left: 30.2rem;
     padding-left: 3rem;
     top: 11.2em;
@@ -267,20 +267,24 @@ html{
     padding-bottom: 1rem;
     background: white;
     z-index: 999;
+    margin-bottom: 0rem;
+    border-left: 1px solid #e6eaee;
+    border-right: 1px solid #e6eaee;
+
     @include xs{
         left: 0;
         z-index: 4;
         right: 0;
         margin-bottom: 0;
-        padding: 2rem 1rem 1rem;
+        padding: 9rem 1rem 1rem;
     }
     @include sm{
         left: 0;
         z-index: 4;
         right: 0;
-        top: 9em;
         margin-bottom: 0;
-        padding: 2rem 1rem 1rem;
+        padding: 0rem 1rem 1rem;
+
     }
 }
 #stage-title .bottom{
@@ -312,15 +316,15 @@ html{
     margin-left: 30rem;
     margin-right: 25rem;
     >.center{
-        padding: 12rem 4rem 3rem;
+        padding: 3rem 4rem;
         flex-grow: 1;
         border-left: 1px solid #e6eaee;
         border-right: 1px solid #e6eaee;
         @include xs{
-            padding: 10rem 2rem;
+            padding: 3rem 2rem;
         }
         @include sm{
-            padding: 7rem 4rem 3rem;
+            padding: 2rem 4rem 3rem;
         }
         .new-post-card{
             border-radius: 0.6rem;

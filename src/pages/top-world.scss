@@ -5,7 +5,7 @@ html{
     font-size: 10px;
 }
 #content{
-    padding-top: 11.2em;
+    //padding-top: 11.2em;
 }
 #stage-container{
     padding:0;
@@ -452,6 +452,9 @@ html{
                 align-items: center;
                 justify-content: center;
                 margin-top: 2rem;
+                @include xs{
+                    margin-top: 4rem;
+                }
                 span{
                     font-size: 1.1rem;
                     font-weight: 600;
@@ -806,4 +809,72 @@ html{
         }
 
     }
+}
+
+.detail-mobile{
+    display: none;
+    @include xs{
+        display: block;
+    }
+    @include sm{
+        display: block;
+    }
+    .media-body{
+        @include xs{
+            background-color: #F1F8F8 !important;
+
+        }
+        @include sm{
+            background-color: #F1F8F8 !important;
+        }
+    }
+
+    .media-body{
+        margin-top: 2rem;
+
+    }
+    .mobile-container{
+        display: flex;
+        justify-content: space-between;
+        .image-area{
+            margin-bottom: 0 !important;
+        }
+        .text{
+            padding-left: 1.3rem;
+        }
+    }
+    .media-profile-container{
+        margin-top: 2rem;
+        .profile{
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+    .info-container{
+        display: flex;
+        padding-top: 1rem;
+        .info-small-container{
+            padding-right: 1rem;
+            .info-content{
+                span{
+                    padding-right: 1rem;
+                }
+
+            }
+        }
+    }
+    .info-area{
+        .info{
+            padding-top: 1rem;
+            font-weight: 600;
+            &.total{
+                padding-top: 0;
+            }
+            &.last30{
+                padding-left: 2rem;
+            }
+        }
+    }
+
+
 }
